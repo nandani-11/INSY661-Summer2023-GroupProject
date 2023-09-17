@@ -1,0 +1,1770 @@
+Create Tables & Insert Data:
+
+
+--
+-- Table structure for table `address`
+--
+CREATE TABLE `address` (
+  `address_ID` int(11) NOT NULL,
+  `street_number` varchar(45) DEFAULT NULL,
+  `street_name` varchar(45) DEFAULT NULL,
+  `city` varchar(45) DEFAULT NULL,
+  `country` varchar(45) DEFAULT NULL,
+  `postal_code` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Dumping data for table `address`
+--
+INSERT INTO `address` (`address_ID`, `street_number`, `street_name`, `city`, `country`, `postal_code`) VALUES
+(1, '123', 'Main Street', 'Cityville', 'USA', '12345'),
+(2, '456', 'Elm Avenue', 'Townsville', 'USA', '67890'),
+(3, '789', 'Oak Lane', 'Villagetown', 'USA', '54321'),
+(4, '101', 'Maple Road', 'Countryside', 'USA', '98765'),
+(5, '222', 'Pine Street', 'Forestville', 'USA', '56789'),
+(6, '333', 'Cedar Lane', 'Riverwood', 'USA', '34567'),
+(7, '444', 'Birch Avenue', 'Meadowville', 'USA', '23456'),
+(8, '555', 'Willow Road', 'Hillsborough', 'USA', '45678'),
+(9, '666', 'Juniper Street', 'Valleytown', 'USA', '78901'),
+(10, '777', 'Sycamore Lane', 'Harbor City', 'USA', '89012'),
+(11, '888', 'Redwood Avenue', 'Oceanview', 'USA', '12345'),
+(12, '999', 'Magnolia Road', 'Sunnyville', 'USA', '23456'),
+(13, '1111', 'Hickory Lane', 'Mountainville', 'USA', '34567'),
+(14, '1212', 'Cypress Street', 'Prairieville', 'USA', '45678'),
+(15, '1313', 'Walnut Road', 'Meadowville', 'USA', '56789'),
+(16, '1414', 'Beech Avenue', 'Riverwood', 'USA', '67890'),
+(17, '1515', 'Cedar Lane', 'Valleytown', 'USA', '78901'),
+(18, '1616', 'Maple Street', 'Hillsborough', 'USA', '89012'),
+(19, '1717', 'Pine Road', 'Harbor City', 'USA', '12345'),
+(20, '1818', 'Oak Avenue', 'Oceanview', 'USA', '23456'),
+(21, '1919', 'Willow Lane', 'Sunnyville', 'USA', '34567'),
+(22, '2020', 'Juniper Street', 'Mountainville', 'USA', '45678'),
+(23, '2121', 'Sycamore Avenue', 'Prairieville', 'USA', '56789'),
+(24, '2222', 'Redwood Road', 'Meadowville', 'USA', '67890'),
+(25, '2323', 'Magnolia Lane', 'Valleytown', 'USA', '78901'),
+(26, '2424', 'Hickory Street', 'Hillsborough', 'USA', '89012'),
+(27, '2525', 'Cypress Lane', 'Harbor City', 'USA', '12345'),
+(28, '2626', 'Walnut Avenue', 'Oceanview', 'USA', '23456'),
+(29, '2727', 'Beech Road', 'Sunnyville', 'USA', '34567'),
+(30, '2828', 'Cedar Lane', 'Mountainville', 'USA', '45678'),
+(31, '2929', 'Maple Street', 'Prairieville', 'USA', '56789'),
+(32, '3030', 'Pine Avenue', 'Meadowville', 'USA', '67890'),
+(33, '3131', 'Oak Road', 'Valleytown', 'USA', '78901'),
+(34, '3232', 'Willow Lane', 'Hillsborough', 'USA', '89012'),
+(35, '3333', 'Juniper Avenue', 'Harbor City', 'USA', '12345'),
+(36, '3434', 'Sycamore Lane', 'Oceanview', 'USA', '23456'),
+(37, '3535', 'Redwood Road', 'Sunnyville', 'USA', '34567'),
+(38, '3636', 'Magnolia Street', 'Mountainville', 'USA', '45678'),
+(39, '3737', 'Hickory Avenue', 'Prairieville', 'USA', '56789'),
+(40, '3838', 'Cypress Lane', 'Meadowville', 'USA', '67890'),
+(41, '3939', 'Walnut Street', 'Valleytown', 'USA', '78901'),
+(42, '4040', 'Beech Road', 'Hillsborough', 'USA', '89012'),
+(43, '4141', 'Cedar Lane', 'Harbor City', 'USA', '12345'),
+(44, '4242', 'Maple Avenue', 'Oceanview', 'USA', '23456'),
+(45, '4343', 'Pine Lane', 'Sunnyville', 'USA', '34567'),
+(46, '4444', 'Oak Street', 'Mountainville', 'USA', '45678'),
+(47, '4545', 'Willow Road', 'Prairieville', 'USA', '56789'),
+(48, '4646', 'Juniper Avenue', 'Meadowville', 'USA', '67890'),
+(49, '4747', 'Sycamore Lane', 'Valleytown', 'USA', '78901'),
+(50, '4848', 'Redwood Street', 'Hillsborough', 'USA', '89012'),
+(51, '5151', 'Cypress Road', 'Harbor City', 'USA', '12345'),
+(52, '5252', 'Walnut Lane', 'Oceanview', 'USA', '23456'),
+(53, '5353', 'Beech Avenue', 'Sunnyville', 'USA', '34567'),
+(54, '5454', 'Cedar Street', 'Mountainville', 'USA', '45678'),
+(55, '5555', 'Maple Road', 'Prairieville', 'USA', '56789'),
+(56, '5656', 'Pine Lane', 'Meadowville', 'USA', '67890'),
+(57, '5757', 'Oak Avenue', 'Valleytown', 'USA', '78901'),
+(58, '5858', 'Willow Road', 'Hillsborough', 'USA', '89012'),
+(59, '5959', 'Juniper Lane', 'Harbor City', 'USA', '12345'),
+(60, '6060', 'Sycamore Street', 'Oceanview', 'USA', '23456'),
+(61, '6161', 'Redwood Road', 'Sunnyville', 'USA', '34567'),
+(62, '6262', 'Magnolia Avenue', 'Mountainville', 'USA', '45678'),
+(63, '6363', 'Hickory Lane', 'Prairieville', 'USA', '56789'),
+(64, '6464', 'Cypress Street', 'Meadowville', 'USA', '67890'),
+(65, '6565', 'Walnut Road', 'Valleytown', 'USA', '78901'),
+(66, '6666', 'Beech Lane', 'Hillsborough', 'USA', '89012'),
+(67, '6767', 'Cedar Avenue', 'Harbor City', 'USA', '12345'),
+(68, '6868', 'Maple Lane', 'Oceanview', 'USA', '23456'),
+(69, '6969', 'Pine Street', 'Sunnyville', 'USA', '34567'),
+(70, '7070', 'Oak Road', 'Mountainville', 'USA', '45678'),
+(71, '7171', 'Willow Avenue', 'Prairieville', 'USA', '56789'),
+(72, '7272', 'Juniper Street', 'Meadowville', 'USA', '67890'),
+(73, '7373', 'Sycamore Lane', 'Valleytown', 'USA', '78901'),
+(74, '7474', 'Redwood Road', 'Hillsborough', 'USA', '89012'),
+(75, '7575', 'Magnolia Lane', 'Harbor City', 'USA', '12345'),
+(76, '7676', 'Hickory Street', 'Oceanview', 'USA', '23456'),
+(77, '7777', 'Cypress Lane', 'Sunnyville', 'USA', '34567'),
+(78, '7878', 'Walnut Avenue', 'Mountainville', 'USA', '45678'),
+(79, '7979', 'Beech Road', 'Prairieville', 'USA', '56789'),
+(80, '8080', 'Cedar Street', 'Meadowville', 'USA', '67890'),
+(81, '8181', 'Maple Lane', 'Valleytown', 'USA', '78901'),
+(82, '8282', 'Pine Avenue', 'Hillsborough', 'USA', '89012'),
+(83, '8383', 'Oak Road', 'Harbor City', 'USA', '12345'),
+(84, '8484', 'Willow Street', 'Oceanview', 'USA', '23456'),
+(85, '8585', 'Juniper Lane', 'Sunnyville', 'USA', '34567'),
+(86, '8686', 'Sycamore Avenue', 'Mountainville', 'USA', '45678'),
+(87, '8787', 'Redwood Road', 'Prairieville', 'USA', '56789'),
+(88, '8888', 'Magnolia Street', 'Meadowville', 'USA', '67890'),
+(89, '8989', 'Hickory Lane', 'Valleytown', 'USA', '78901'),
+(90, '9090', 'Cypress Avenue', 'Hillsborough', 'USA', '89012'),
+(91, '9191', 'Walnut Street', 'Harbor City', 'USA', '12345'),
+(92, '9292', 'Beech Lane', 'Oceanview', 'USA', '23456'),
+(93, '9393', 'Cedar Avenue', 'Sunnyville', 'USA', '34567'),
+(94, '9494', 'Maple Street', 'Mountainville', 'USA', '45678'),
+(95, '9595', 'Pine Lane', 'Prairieville', 'USA', '56789'),
+(96, '9696', 'Oak Road', 'Meadowville', 'USA', '67890'),
+(97, '9797', 'Willow Avenue', 'Valleytown', 'USA', '78901'),
+(98, '9898', 'Juniper Street', 'Hillsborough', 'USA', '89012'),
+(99, '9999', 'Sycamore Road', 'Harbor City', 'USA', '12345'),
+(100, '1010', 'Redwood Lane', 'Oceanview', 'USA', '23456');
+
+
+
+
+--
+-- Table structure for table `clients`
+--
+CREATE TABLE `clients` (
+  `client_ID` int(11) NOT NULL,
+  `client_name` varchar(45) DEFAULT NULL,
+  `rep_phone` bigint(20) DEFAULT NULL,
+  `rep_email` varchar(45) DEFAULT NULL,
+  `client_type` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Dumping data for table `clients`
+--
+INSERT INTO `clients` (`client_ID`, `client_name`, `rep_phone`, `rep_email`, `client_type`) VALUES
+(1, 'ABC Corporation', 1234567890, 'contact@abccorp.com', 'Corporate'),
+(2, 'XYZ Enterprises', 9876543210, 'info@xyzenterprises.com', 'Enterprise'),
+(3, 'GreenTech Solutions', 2345678901, 'sales@greentech.com', 'Technology'),
+(4, 'BlueWave Industries', 8765432109, 'support@bluewaveindustries.com', 'Manufacturing'),
+(5, 'Innovate Innovations', 3456789012, 'info@innovateinnovations.com', 'Innovation'),
+(6, 'Sunrise Financials', 7654321098, 'contact@sunrisefinancials.com', 'Finance'),
+(7, 'HealthFirst Group', 4567890123, 'info@healthfirstgroup.com', 'Healthcare'),
+(8, 'Foodie Delights', 6543210987, 'orders@foodiedelights.com', 'Food & Beverage'),
+(9, 'EcoFriendly Solutions', 5678901234, 'sales@ecofriendlysolutions.com', 'Environmental'),
+(10, 'TravelWise Adventures', 5432109876, 'info@travelwiseadventures.com', 'Travel'),
+(11, 'Global Techtronics', 4567890123, 'contact@globaltechtronics.com', 'Technology'),
+(12, 'Nature\'s Best', 3456789012, 'info@naturesbest.com', 'Nature'),
+(13, 'Bright Future Innovations', 2345678901, 'info@brightfuture.com', 'Innovation'),
+(14, 'Sunshine Healthcare', 7654321098, 'info@sunshinehealthcare.com', 'Healthcare'),
+(15, 'GreenEats', 6543210987, 'orders@greeneats.com', 'Food & Beverage'),
+(16, 'CleanPlanet Solutions', 5678901234, 'sales@cleanplanet.com', 'Environmental'),
+(17, 'ExploreMore Travel', 5432109876, 'info@exploremoretravel.com', 'Travel'),
+(18, 'Dynamic Innovators', 4567890123, 'contact@dynamicinnovators.com', 'Innovation'),
+(19, 'Wellness World', 3456789012, 'info@wellnessworld.com', 'Health & Wellness'),
+(20, 'Tasty Bites', 2345678901, 'orders@tastybites.com', 'Food & Beverage'),
+(21, 'EcoLife Solutions', 7654321098, 'info@ecolife.com', 'Environmental'),
+(22, 'Wanderlust Journeys', 6543210987, 'info@wanderlustjourneys.com', 'Travel'),
+(23, 'TechGenius', 5678901234, 'info@techgenius.com', 'Technology'),
+(24, 'Nature\'s Harmony', 5432109876, 'info@naturesharmony.com', 'Nature'),
+(25, 'HealthMatters', 4567890123, 'info@healthmatters.com', 'Healthcare'),
+(26, 'Gourmet Delights', 3456789012, 'orders@gourmetdelights.com', 'Food & Beverage'),
+(27, 'GreenHorizon Solutions', 2345678901, 'sales@greenhorizon.com', 'Environmental'),
+(28, 'Voyage Explorers', 7654321098, 'info@voyageexplorers.com', 'Travel'),
+(29, 'Innovative Tech Solutions', 6543210987, 'contact@innovativetech.com', 'Technology'),
+(30, 'GreenVista', 5678901234, 'info@greenvista.com', 'Environmental'),
+(31, 'Healthy Living', 5432109876, 'info@healthyliving.com', 'Health & Wellness'),
+(32, 'Culinary Delights', 4567890123, 'orders@culinarydelights.com', 'Food & Beverage'),
+(33, 'EcoSolutions', 3456789012, 'info@ecosolutions.com', 'Environmental'),
+(34, 'WanderFree Travels', 2345678901, 'info@wanderfreetravels.com', 'Travel'),
+(35, 'TechWonders', 7654321098, 'info@techwonders.com', 'Technology'),
+(36, 'GreenEarth', 6543210987, 'info@greenearth.com', 'Environmental'),
+(37, 'HealthyStart', 5678901234, 'info@healthystart.com', 'Health & Wellness'),
+(38, 'Savory Delights', 5432109876, 'orders@savorydelights.com', 'Food & Beverage'),
+(39, 'EcoFriendly Innovations', 4567890123, 'info@ecofriendlyinnovations.com', 'Innovation'),
+(40, 'RoamWild Travels', 3456789012, 'info@roamwildtravels.com', 'Travel'),
+(41, 'Global Dynamics', 2345678901, 'info@globaldynamics.com', 'Technology'),
+(42, 'EcoCare Solutions', 7654321098, 'info@ecocare.com', 'Environmental'),
+(43, 'HealthSense', 6543210987, 'info@healthsense.com', 'Health & Wellness'),
+(44, 'TasteBuds', 5678901234, 'orders@tastebuds.com', 'Food & Beverage'),
+(45, 'EcoLiving', 5432109876, 'info@ecoliving.com', 'Environmental'),
+(46, 'Adventurous Journeys', 4567890123, 'info@adventurousjourneys.com', 'Travel'),
+(47, 'TechInsight', 3456789012, 'info@techinsight.com', 'Technology'),
+(48, 'GreenLuxe', 2345678901, 'info@greenluxe.com', 'Environmental'),
+(49, 'Wellness Hub', 7654321098, 'info@wellnesshub.com', 'Health & Wellness'),
+(50, 'Sweet Indulgences', 6543210987, 'orders@sweetindulgences.com', 'Food & Beverage'),
+(51, 'TechSolutions', 5678901234, 'info@techsolutions.com', 'Technology'),
+(52, 'EcoImpact', 5432109876, 'info@ecoimpact.com', 'Environmental'),
+(53, 'Holistic Health', 4567890123, 'info@holistichealth.com', 'Health & Wellness'),
+(54, 'Gourmet Treats', 3456789012, 'orders@gourmettreats.com', 'Food & Beverage'),
+(55, 'GreenVibes', 2345678901, 'info@greenvibes.com', 'Environmental'),
+(56, 'Wanderer\'s Haven', 7654321098, 'info@wanderershaven.com', 'Travel'),
+(57, 'InfoTech Innovations', 6543210987, 'info@infotechinnovations.com', 'Technology'),
+(58, 'EcoVision', 5678901234, 'info@ecovision.com', 'Environmental'),
+(59, 'LifeEssence Wellness', 5432109876, 'info@lifeessencewellness.com', 'Health & Wellness'),
+(60, 'Delectable Delights', 4567890123, 'orders@delectabledelights.com', 'Food & Beverage'),
+(61, 'GreenSpaces', 3456789012, 'info@greenspaces.com', 'Environmental'),
+(62, 'Wanderlust Dreams', 2345678901, 'info@wanderlustdreams.com', 'Travel'),
+(63, 'InnovateIT', 7654321098, 'info@innovateit.com', 'Technology'),
+(64, 'EcoFriendly Living', 6543210987, 'info@ecofriendlyliving.com', 'Environmental'),
+(65, 'Vitality Wellness', 5678901234, 'info@vitalitywellness.com', 'Health & Wellness'),
+(66, 'Savory Creations', 5432109876, 'orders@savorycreations.com', 'Food & Beverage'),
+(67, 'GreenFutures', 4567890123, 'info@greenfutures.com', 'Environmental'),
+(68, 'Adventures Await', 3456789012, 'info@adventuresawait.com', 'Travel'),
+(69, 'Innovative Solutions', 2345678901, 'info@innovativesolutions.com', 'Technology'),
+(70, 'EcoConscious', 7654321098, 'info@ecoconscious.com', 'Environmental'),
+(71, 'Mindful Wellness', 6543210987, 'info@mindfulwellness.com', 'Health & Wellness'),
+(72, 'Tasty Temptations', 5678901234, 'orders@tastytemptations.com', 'Food & Beverage'),
+(73, 'GreenTech Ventures', 5432109876, 'info@greentechventures.com', 'Environmental'),
+(74, 'Exploration Escapes', 4567890123, 'info@explorationescapes.com', 'Travel'),
+(75, 'BrightIdeas Tech', 3456789012, 'info@brightideastech.com', 'Technology'),
+(76, 'EcoBalance', 2345678901, 'info@ecobalance.com', 'Environmental'),
+(77, 'Wellness Connection', 7654321098, 'info@wellnessconnection.com', 'Health & Wellness'),
+(78, 'Delicious Delicacies', 6543210987, 'orders@deliciousdelicacies.com', 'Food & Beverage'),
+(79, 'GreenLiving Solutions', 5678901234, 'info@greenlivingsolutions.com', 'Environmental'),
+(80, 'TravelWonders', 5432109876, 'info@travelwonders.com', 'Travel'),
+(81, 'TechGenius', 4567890123, 'info@techgenius.com', 'Technology'),
+(82, 'EcoAware', 3456789012, 'info@ecoaware.com', 'Environmental'),
+(83, 'Holistic Harmony', 2345678901, 'info@holisticharmony.com', 'Health & Wellness'),
+(84, 'Culinary Cravings', 7654321098, 'orders@culinarycravings.com', 'Food & Beverage'),
+(85, 'GreenMinds', 6543210987, 'info@greenminds.com', 'Environmental'),
+(86, 'Journey Ventures', 5678901234, 'info@journeyventures.com', 'Travel'),
+(87, 'InnovateTech', 5432109876, 'info@innovatetech.com', 'Technology'),
+(88, 'EcoSolutions', 4567890123, 'info@ecosolutions.com', 'Environmental'),
+(89, 'Wellness Haven', 3456789012, 'info@wellnesshaven.com', 'Health & Wellness'),
+(90, 'Delightful Eats', 2345678901, 'orders@delightfuleats.com', 'Food & Beverage'),
+(91, 'GreenRevolution', 7654321098, 'info@greenrevolution.com', 'Environmental'),
+(92, 'WanderMore Travels', 6543210987, 'info@wandermoretravels.com', 'Travel'),
+(93, 'TechForward', 5678901234, 'info@techforward.com', 'Technology'),
+(94, 'EcoSavvy', 5432109876, 'info@ecosavvy.com', 'Environmental'),
+(95, 'Vital Essence Wellness', 4567890123, 'info@vitalessencewellness.com', 'Health & Wellness'),
+(96, 'Flavorful Feasts', 3456789012, 'orders@flavorfulfeasts.com', 'Food & Beverage'),
+(97, 'GreenWorld', 2345678901, 'info@greenworld.com', 'Environmental'),
+(98, 'Wanderlust Wonders', 7654321098, 'info@wanderlustwonders.com', 'Travel'),
+(99, 'InnoTech Solutions', 6543210987, 'info@innotechsolutions.com', 'Technology'),
+(100, 'EcoVibes', 5678901234, 'info@ecovibes.com', 'Environmental');
+
+
+
+
+--
+-- Table structure for table `customers`
+--
+CREATE TABLE `customers` (
+  `customer_ID` int(11) NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  `phone` bigint(20) DEFAULT NULL,
+  `address_ID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Dumping data for table `customers`
+--
+INSERT INTO `customers` (`customer_ID`, `name`, `email`, `password`, `phone`, `address_ID`) VALUES
+(1, 'John Doe', 'john@example.com', 'password123', 9876543215, 1),
+(2, 'Jane Smith', 'jane@example.com', 'securepass', 8765432109, 2),
+(3, 'Michael Johnson', 'michael@example.com', 'pass123', 7654321098, 3),
+(4, 'Emily Brown', 'emily@example.com', 'mysecret', 6543210987, 4),
+(5, 'David Wilson', 'david@example.com', 'mypassword', 5432109876, 5),
+(6, 'Linda Williams', 'linda@example.com', 'lindapass', 4321098765, 6),
+(7, 'Robert Davis', 'robert@example.com', 'robert123', 4321098768, 7),
+(8, 'Jennifer Rodriguez', 'jennifer@example.com', 'jenniferpass', 3210987654, 8),
+(9, 'William Martinez', 'william@example.com', 'william123', 2109876543, 9),
+(10, 'Patricia Hernandez', 'patricia@example.com', 'patriciapass', 1098765432, 10),
+(11, 'James Lopez', 'james@example.com', 'james123', 8765432109, 11),
+(12, 'Barbara Gonzalez', 'barbara@example.com', 'barbara456', 7654321098, 12),
+(13, 'Charles Adams', 'charles@example.com', 'charles789', 6543210987, 13),
+(14, 'Sarah Lewis', 'sarah@example.com', 'sarah101', 5432109876, 14),
+(15, 'Daniel Lee', 'daniel@example.com', 'daniel789', 4321098765, 15),
+(16, 'Karen Walker', 'karen@example.com', 'karen555', 3210987654, 16),
+(17, 'Mark Hall', 'mark@example.com', 'mark123', 2109876543, 17),
+(18, 'Nancy Young', 'nancy@example.com', 'nancy789', 1098765432, 18),
+(19, 'Paul Hernandez', 'paul@example.com', 'paul456', 9876543210, 19),
+(20, 'Maria Scott', 'maria@example.com', 'maria123', 8765432110, 20),
+(21, 'Kevin Clark', 'kevin@example.com', 'kevin101', 7654321108, 21),
+(22, 'Ruth Rodriguez', 'ruth@example.com', 'ruth789', 7654321115, 22),
+(23, 'Edward Adams', 'edward@example.com', 'edward789', 7654321116, 23),
+(24, 'Lisa Lewis', 'lisa@example.com', 'lisa456', 7654321117, 24),
+(25, 'Andrew Lee', 'andrew@example.com', 'andrew789', 7654321118, 25),
+(26, 'Donna Walker', 'donna@example.com', 'donna555', 7654321119, 26),
+(27, 'George Hall', 'george@example.com', 'george123', 7654321120, 27),
+(28, 'Karen Young', 'karen@example.com', 'karen789', 7654321121, 28),
+(29, 'Jason Hernandez', 'jason@example.com', 'jason456', 7654321122, 29),
+(30, 'Laura Scott', 'laura@example.com', 'laura123', 7654321123, 30),
+(31, 'Richard Clark', 'richard@example.com', 'richard101', 7654321124, 31),
+(32, 'Carol Rodriguez', 'carol@example.com', 'carol789', 7654321125, 32),
+(33, 'Thomas Adams', 'thomas@example.com', 'thomas789', 7654321126, 33),
+(34, 'Susan Lewis', 'susan@example.com', 'susan456', 7654321127, 34),
+(35, 'Matthew Lee', 'matthew@example.com', 'matthew789', 7654321128, 35),
+(36, 'Dorothy Walker', 'dorothy@example.com', 'dorothy555', 7654321129, 36),
+(37, 'Elizabeth Hall', 'elizabeth@example.com', 'elizabeth123', 7654321130, 37),
+(38, 'Steven Young', 'steven@example.com', 'steven789', 7654321131, 38),
+(39, 'Margaret Hernandez', 'margaret@example.com', 'margaret456', 7654321132, 39),
+(40, 'John Scott', 'john@example.com', 'john123', 7654321133, 40),
+(41, 'Anna Clark', 'anna@example.com', 'anna101', 7654321134, 41),
+(42, 'Kenneth Rodriguez', 'kenneth@example.com', 'kenneth789', 9876543563, 42),
+(43, 'Betty Adams', 'betty@example.com', 'betty789', 9876543564, 43),
+(44, 'Dennis Lewis', 'dennis@example.com', 'dennis456', 9876543565, 44),
+(45, 'Carolyn Lee', 'carolyn@example.com', 'carolyn789', 9876543566, 45),
+(46, 'Gregory Walker', 'gregory@example.com', 'gregory555', 9876543567, 46),
+(47, 'Samuel Hall', 'samuel@example.com', 'samuel123', 9876543568, 47),
+(48, 'Janet Young', 'janet@example.com', 'janet789', 9876943569, 48),
+(49, 'Virginia Hernandez', 'virginia@example.com', 'virginia456', 9876543570, 49),
+(50, 'Daniel Scott', 'daniel@example.com', 'daniel123', 9876543571, 50),
+(51, 'Henry Johnson', 'henry@example.com', 'henry123', 9876543572, 51),
+(52, 'Deborah Gonzalez', 'deborah@example.com', 'deborah456', 9876543573, 52),
+(53, 'Jerry Adams', 'jerry@example.com', 'jerry789', 9876543574, 53),
+(54, 'Kathleen Lewis', 'kathleen@example.com', 'kathleen101', 9876543575, 54),
+(55, 'Albert Lee', 'albert@example.com', 'albert789', 9876543576, 55),
+(56, 'Amanda Walker', 'amanda@example.com', 'amanda555', 9876543577, 56),
+(57, 'Douglas Hall', 'douglas@example.com', 'douglas123', 9876543578, 57),
+(58, 'Gloria Young', 'gloria@example.com', 'gloria789', 9876543579, 58),
+(59, 'Scott Hernandez', 'scott@example.com', 'scott456', 9876543580, 59),
+(60, 'Kelly Scott', 'kelly@example.com', 'kelly123', 9876543581, 60),
+(61, 'Walter Clark', 'walter@example.com', 'walter101', 9876543582, 61),
+(62, 'Carolyn Rodriguez', 'carolyn@example.com', 'carolyn789', 9876543999, 62),
+(63, 'Peter Adams', 'peter@example.com', 'peter789', 9876543991, 63),
+(64, 'Christine Lewis', 'christine@example.com', 'christine456', 9876543992, 64),
+(65, 'Jeremy Lee', 'jeremy@example.com', 'jeremy789', 9876543993, 65),
+(66, 'Gerald Walker', 'gerald@example.com', 'gerald555', 9876543994, 66),
+(67, 'Amy Hall', 'amy@example.com', 'amy123', 9876543995, 67),
+(68, 'Wayne Young', 'wayne@example.com', 'wayne789', 9876543996, 68),
+(69, 'Diana Hernandez', 'diana@example.com', 'diana456', 9876543997, 69),
+(70, 'Russell Scott', 'russell@example.com', 'russell123', 9876543998, 70),
+(71, 'Lori Clark', 'lori@example.com', 'lori101', 9876543999, 71),
+(72, 'Dorothy Rodriguez', 'dorothy@example.com', 'dorothy789', 9876544999, 72),
+(73, 'Bobby Adams', 'bobby@example.com', 'bobby789', 9876545999, 73),
+(74, 'Teresa Lewis', 'teresa@example.com', 'teresa456', 9876546999, 74),
+(75, 'Jesse Lee', 'jesse@example.com', 'jesse789', 9876547999, 75),
+(76, 'Janice Walker', 'janice@example.com', 'janice555', 9876548999, 76),
+(77, 'Bryan Hall', 'bryan@example.com', 'bryan123', 9876549999, 77),
+(78, 'Joyce Young', 'joyce@example.com', 'joyce789', 9876559999, 78),
+(79, 'Billy Hernandez', 'billy@example.com', 'billy456', 9876569999, 79),
+(80, 'Frances Scott', 'frances@example.com', 'frances123', 9876579999, 80),
+(81, 'Louis Clark', 'louis@example.com', 'louis101', 9876589999, 81),
+(82, 'Evelyn Rodriguez', 'evelyn@example.com', 'evelyn789', 9876599999, 82),
+(83, 'Philip Adams', 'philip@example.com', 'philip789', 9876599900, 83),
+(84, 'Joan Lewis', 'joan@example.com', 'joan456', 9876599901, 84),
+(85, 'Harry Lee', 'harry@example.com', 'harry789', 9876599902, 85),
+(86, 'Eugene Walker', 'eugene@example.com', 'eugene555', 9876599903, 86),
+(87, 'Alan Hall', 'alan@example.com', 'alan123', 9876599904, 87),
+(88, 'Marie Young', 'marie@example.com', 'marie789', 9876599905, 88),
+(89, 'Dale Hernandez', 'dale@example.com', 'dale456', 9876599906, 89),
+(90, 'Lorraine Scott', 'lorraine@example.com', 'lorraine123', 9876599907, 90),
+(91, 'Walter Clark', 'walter@example.com', 'walter101', 9876599908, 91),
+(92, 'Ruby Rodriguez', 'ruby@example.com', 'ruby789', 9876599909, 92),
+(93, 'Philip Adams', 'philip@example.com', 'philip789', 9876599910, 93),
+(94, 'Shirley Lewis', 'shirley@example.com', 'shirley456', 9876599911, 94),
+(95, 'Bruce Lee', 'bruce@example.com', 'bruce789', 9876599912, 95),
+(96, 'Donna Walker', 'donna@example.com', 'donna555', 9876599913, 96),
+(97, 'Roger Hall', 'roger@example.com', 'roger123', 9876599914, 97),
+(98, 'Gloria Young', 'gloria@example.com', 'gloria789', 9876599915, 98),
+(99, 'Gerald Hernandez', 'gerald@example.com', 'gerald456', 9876599916, 99),
+(100, 'Ruth Scott', 'ruth@example.com', 'ruth123', 9876599917, 100);
+
+
+
+
+--
+-- Table structure for table `events`
+--
+CREATE TABLE `events` (
+  `event_ID` int(11) NOT NULL,
+  `event_name` varchar(45) DEFAULT NULL,
+  `event_start` datetime DEFAULT NULL,
+  `event_description` varchar(100) DEFAULT NULL,
+  `event_end` datetime DEFAULT NULL,
+  `event_category` varchar(200) DEFAULT NULL,
+  `event_genre` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='        ';
+
+
+--
+-- Dumping data for table `events`
+--
+INSERT INTO `events` (`event_ID`, `event_name`, `event_start`, `event_description`, `event_end`, `event_category`, `event_genre`) VALUES
+(1, 'Music Festival', '2022-08-15 18:00:00', 'Join us for a day of live music performances!', '2022-08-15 22:00:00', 'Festival', 'Music'),
+(2, 'Tech Conference', '2022-09-20 09:00:00', 'A conference on the latest tech trends and innovations.', '2022-09-20 17:00:00', 'Conference', 'Technology'),
+(3, 'Art Exhibition', '2022-10-10 10:00:00', 'Discover a stunning collection of contemporary art.', '2022-10-10 18:00:00', 'Exhibition', 'Art'),
+(4, 'Comedy Night', '2022-11-05 20:00:00', 'Laugh out loud with top stand-up comedians.', '2022-11-05 22:00:00', 'Performance', 'Comedy'),
+(5, 'Food Festival', '2022-12-01 12:00:00', 'Indulge in a variety of delicious cuisines.', '2022-12-01 20:00:00', 'Festival', 'Food'),
+(6, 'Fashion Show', '2022-08-25 16:00:00', 'Experience the latest fashion trends on the runway.', '2022-08-25 18:00:00', 'Fashion', 'Style'),
+(7, 'Movie Night', '2022-09-10 19:30:00', 'Enjoy classic movies under the starry sky.', '2022-09-10 23:00:00', 'Entertainment', 'Film'),
+(8, 'Science Fair', '2022-10-15 10:00:00', 'Explore hands-on science experiments and projects.', '2022-10-15 16:00:00', 'Fair', 'Science'),
+(9, 'Dance Workshop', '2022-11-08 14:00:00', 'Learn dance techniques and choreography from professionals.', '2022-11-08 17:00:00', 'Workshop', 'Dance'),
+(10, 'Outdoor Adventure', '2022-12-05 09:00:00', 'Embark on a thrilling outdoor adventure with friends.', '2022-12-05 16:00:00', 'Adventure', 'Outdoor'),
+(11, 'Book Reading', '2022-08-18 18:30:00', 'Listen to authors read excerpts from their latest books.', '2022-08-18 20:30:00', 'Literature', 'Books'),
+(12, 'Culinary Workshop', '2022-09-12 13:00:00', 'Learn cooking techniques from expert chefs.', '2022-09-12 15:00:00', 'Workshop', 'Culinary'),
+(13, 'Gaming Tournament', '2022-10-20 16:00:00', 'Compete in video game tournaments and win prizes.', '2022-10-20 21:00:00', 'Gaming', 'Entertainment'),
+(14, 'Yoga Retreat', '2022-11-15 08:00:00', 'Refresh your mind and body with a relaxing yoga retreat.', '2022-11-17 17:00:00', 'Retreat', 'Wellness'),
+(15, 'Art Fair', '2022-12-10 10:00:00', 'Explore and purchase unique artworks from local artists.', '2022-12-10 17:00:00', 'Fair', 'Art'),
+(16, 'Music Concert', '2022-08-22 19:00:00', 'Experience live music performances by top artists.', '2022-08-22 23:00:00', 'Concert', 'Music'),
+(17, 'Fitness Challenge', '2022-09-18 06:30:00', 'Take on physical challenges and improve your fitness.', '2022-09-18 09:30:00', 'Challenge', 'Health & Fitness'),
+(18, 'Outdoor Picnic', '2022-10-05 12:00:00', 'Enjoy a picnic in the park with family and friends.', '2022-10-05 15:00:00', 'Recreation', 'Outdoor'),
+(19, 'Tech Expo', '2022-11-20 10:00:00', 'Explore the latest technological innovations and gadgets.', '2022-11-20 18:00:00', 'Expo', 'Technology'),
+(20, 'Magic Show', '2022-12-15 17:00:00', 'Be amazed by mind-bending magic tricks and illusions.', '2022-12-15 19:00:00', 'Performance', 'Magic'),
+(21, 'Cooking Class', '2022-08-28 14:00:00', 'Learn to cook delicious dishes from around the world.', '2022-08-28 17:00:00', 'Class', 'Culinary'),
+(22, 'Literary Talk', '2022-09-25 18:00:00', 'Join authors for insightful discussions on literature.', '2022-09-25 20:00:00', 'Lecture', 'Literature'),
+(23, 'Fitness Bootcamp', '2022-10-18 07:00:00', 'Get fit with intense workouts and group training.', '2022-10-18 09:00:00', 'Bootcamp', 'Fitness'),
+(24, 'Outdoor Concert', '2022-11-10 16:30:00', 'Enjoy live music performances in an outdoor setting.', '2022-11-10 20:00:00', 'Concert', 'Music'),
+(25, 'Photography Workshop', '2022-12-05 09:00:00', 'Learn photography techniques from experienced photographers.', '2022-12-05 12:00:00', 'Workshop', 'Photography'),
+(26, 'Fashion Exhibition', '2022-08-30 11:00:00', 'Discover the latest fashion trends and designs.', '2022-08-30 18:00:00', 'Exhibition', 'Fashion'),
+(27, 'Movie Marathon', '2022-09-28 14:00:00', 'Watch a series of movies back-to-back.', '2022-09-28 23:00:00', 'Entertainment', 'Film'),
+(28, 'Robotics Workshop', '2022-10-25 10:00:00', 'Learn about robotics and build your own robots.', '2022-10-25 15:00:00', 'Workshop', 'Technology'),
+(29, 'Dance Performance', '2022-11-18 19:30:00', 'Experience captivating dance performances by talented dancers.', '2022-11-18 21:30:00', 'Performance', 'Dance'),
+(30, 'Gastronomy Event', '2022-12-12 18:00:00', 'Explore unique flavors and culinary experiences.', '2022-12-12 21:00:00', 'Event', 'Food & Drink'),
+(31, 'Music Workshop', '2022-08-21 12:00:00', 'Learn to play musical instruments and create music.', '2022-08-21 15:00:00', 'Workshop', 'Music'),
+(32, 'Health Seminar', '2022-09-30 16:00:00', 'Gain valuable insights into health and wellness.', '2022-09-30 18:00:00', 'Seminar', 'Health & Wellness'),
+(33, 'Outdoor Painting', '2022-10-22 09:00:00', 'Express your creativity through outdoor painting sessions.', '2022-10-22 12:00:00', 'Art', 'Painting'),
+(34, 'Cycling Challenge', '2022-11-15 07:00:00', 'Participate in a challenging cycling race.', '2022-11-15 11:00:00', 'Challenge', 'Sports'),
+(35, 'Science Talk', '2022-12-08 18:30:00', 'Engage in discussions about scientific discoveries.', '2022-12-08 20:30:00', 'Talk', 'Science'),
+(36, 'Outdoor Yoga', '2022-08-31 08:00:00', 'Practice yoga amidst nature for relaxation.', '2022-08-31 09:30:00', 'Yoga', 'Wellness'),
+(37, 'Craft Fair', '2022-09-14 10:00:00', 'Shop for handmade crafts and unique creations.', '2022-09-14 16:00:00', 'Fair', 'Crafts'),
+(38, 'Robotics Competition', '2022-10-05 13:00:00', 'Compete in robotics challenges and showcase your robots.', '2022-10-05 18:00:00', 'Competition', 'Technology'),
+(39, 'Contemporary Art Show', '2022-11-20 15:00:00', 'Experience cutting-edge contemporary artworks.', '2022-11-20 19:00:00', 'Art', 'Contemporary'),
+(40, 'Fitness Class', '2022-12-10 17:30:00', 'Join energetic fitness classes for a full-body workout.', '2022-12-10 18:30:00', 'Class', 'Fitness'),
+(41, 'Fashion Design Workshop', '2022-08-23 14:00:00', 'Learn the art of fashion design and garment construction.', '2022-08-23 17:00:00', 'Workshop', 'Fashion'),
+(42, 'Movie Premiere', '2022-09-15 19:30:00', 'Be among the first to watch an exclusive movie premiere.', '2022-09-15 22:00:00', 'Entertainment', 'Film'),
+(43, 'Science Exhibition', '2022-10-08 10:00:00', 'Explore interactive science exhibits and displays.', '2022-10-08 16:00:00', 'Exhibition', 'Science'),
+(44, 'Latin Dance Night', '2022-11-25 20:00:00', 'Dance to the rhythms of Latin music all night long.', '2022-11-26 01:00:00', 'Dance Night', 'Music'),
+(45, 'Cooking Contest', '2022-12-18 16:00:00', 'Showcase your culinary skills in a cooking competition.', '2022-12-18 19:00:00', 'Contest', 'Culinary'),
+(46, 'Music Jam Session', '2022-08-28 18:00:00', 'Join fellow musicians for a lively jam session.', '2022-08-28 21:00:00', 'Music', 'Jam'),
+(47, 'Fitness Workshop', '2022-09-20 11:00:00', 'Learn effective fitness techniques and routines.', '2022-09-20 14:00:00', 'Workshop', 'Health & Fitness'),
+(48, 'Outdoor Photography', '2022-10-15 08:00:00', 'Capture the beauty of nature through photography.', '2022-10-15 11:00:00', 'Photography', 'Nature'),
+(49, 'Art Workshop', '2022-11-05 12:00:00', 'Unleash your creativity through art and painting.', '2022-11-05 15:00:00', 'Workshop', 'Art'),
+(50, 'New Years Eve Party', '2022-01-01 20:00:00', 'Celebrate the arrival of the NEW YEAR with a grand party.', '2022-01-02 02:00:00', 'Party', 'Celebration'),
+(51, 'Family Picnic', '2022-05-20 10:00:00', 'Enjoy a fun-filled DAY with your family outdoors.', '2022-05-20 16:00:00', 'Recreation', 'Outdoor'),
+(52, ' Art Workshop ', '2022-09-05 14:00:00', ' Learn the basics of acrylic painting.', '2022-09-05 18:00:00', ' Workshop ', ' Art '),
+(53, 'Charity Run', '2022-10-15 08:00:00', 'Run FOR a cause AND raise funds FOR charity.', '2022-10-15 11:00:00', 'Fundraiser', 'Sports'),
+(54, 'Movie Marathon', '2022-11-10 12:00:00', 'Watch a series of classic movies ALL DAY.', '2022-11-10 21:00:00', 'Entertainment', 'Film'),
+(55, 'Fitness Expo', '2022-12-03 09:00:00', 'Explore the latest fitness trends AND products.', '2022-12-03 17:00:00', 'Exhibition', 'Health & Wellness'),
+(56, 'Tech Hackathon', '2022-08-25 18:00:00', 'Compete IN a coding challenge AND build innovative solutions.', '2022-08-26 18:00:00', 'Competition', 'Technology'),
+(57, 'Culinary Festival', '2022-09-10 11:00:00', 'Savor a variety of gourmet dishes around the world.', '2022-09-12 20:00:00', 'Food Festival', 'Food'),
+(58, 'Comedy SHOW', '2022-10-20 19:30:00', 'Laugh OUT loud WITH stand-up comedians AND funny sketches.', '2022-10-20 22:00:00', 'Performance', 'Comedy'),
+(59, 'Nature Hike', '2022-11-05 07:00:00', 'Embark ON a scenic hike through lush forests AND picturesque trails.', '2022-11-05 14:00:00', 'Outdoor Adventure', 'Nature'),
+(60, 'Science Symposium', '2022-12-10 09:00:00', 'Explore breakthroughs IN various FIELDS of science AND research.', '2022-12-11 17:00:00', 'Symposium', 'Science'),
+(61, 'Fashion SHOW', '2022-08-30 15:00:00', 'Witness the latest trends AND designs ON the runway.', '2022-08-30 18:00:00', 'Fashion', 'Style'),
+(62, 'Music Concert', '2022-09-15 19:00:00', 'Groove TO the beats of popular bands AND artists.', '2022-09-15 23:00:00', 'Concert', 'Music'),
+(63, 'Yoga Retreat', '2022-10-05 08:30:00', 'Immerse yourself IN a peaceful yoga AND meditation retreat.', '2022-10-07 17:00:00', 'Wellness Retreat', 'Health & Wellness'),
+(64, 'Literary Reading', '2022-11-18 17:30:00', 'Listen TO authors READ excerpts FROM their latest works.', '2022-11-18 19:30:00', 'Literature', 'Books'),
+(65, 'Craft Fair', '2022-12-05 10:00:00', 'Discover UNIQUE handmade crafts AND artisanal products.', '2022-12-05 16:00:00', 'Market', 'Crafts'),
+(66, 'Dance Workshop', '2022-08-22 14:00:00', 'Learn different dance styles FROM professional instructors.', '2022-08-22 18:00:00', 'Workshop', 'Dance'),
+(67, 'Gaming Tournament', '2022-09-08 16:00:00', 'Compete IN exciting video game tournaments FOR prizes.', '2022-09-08 21:00:00', 'Gaming', 'Entertainment'),
+(68, 'Green Expo', '2022-10-25 10:00:00', 'Explore eco-friendly products AND sustainable living ideas.', '2022-10-25 16:00:00', 'Exhibition', 'Environment'),
+(69, 'Magic SHOW', '2022-11-12 18:30:00', 'Be amazed BY captivating magic tricks AND illusions.', '2022-11-12 20:30:00', 'Performance', 'Magic'),
+(70, 'Photography Workshop', '2022-12-15 09:00:00', 'Learn photography techniques AND composition skills.', '2022-12-15 13:00:00', 'Workshop', 'Photography'),
+(71, 'Fitness Bootcamp', '2022-08-28 06:00:00', 'GET fit WITH intense workouts AND GROUP challenges.', '2022-08-28 09:00:00', 'Fitness', 'Health & Wellness'),
+(72, 'Outdoor Concert', '2022-09-17 17:30:00', 'Enjoy live music performances under the OPEN sky.', '2022-09-17 21:00:00', 'Concert', 'Music'),
+(73, 'Cooking Class', '2022-10-08 13:00:00', 'Learn TO cook delicious dishes FROM renowned chefs.', '2022-10-08 16:00:00', 'Class', 'Culinary'),
+(74, 'Art Exhibition', '2022-11-28 11:00:00', 'Admire a collection of contemporary art pieces.', '2022-11-28 18:00:00', 'Exhibition', 'Art'),
+(75, 'Charity Gala', '2022-12-18 19:00:00', 'Support charitable causes AT an elegant fundraising gala.', '2022-12-18 23:00:00', 'Fundraiser', 'Social'),
+(76, 'Tech Seminar', '2022-08-23 09:00:00', 'Attend informative talks ON the latest tech trends.', '2022-08-23 17:00:00', 'Seminar', 'Technology'),
+(77, 'Wine Tasting', '2022-09-13 16:00:00', 'Sample a variety of fine wines FROM different regions.', '2022-09-13 19:00:00', 'Tasting', 'Food & Drink'),
+(78, 'Theater Performance', '2022-10-30 19:30:00', 'Experience captivating theater plays AND performances.', '2022-10-30 22:00:00', 'Performance', 'Theater'),
+(79, 'Fitness Challenge', '2022-11-15 06:30:00', 'Take ON physical challenges AND achieve your fitness goals.', '2022-11-15 09:30:00', 'Challenge', 'Health & Wellness'),
+(80, 'Science Fair', '2022-12-08 09:00:00', 'Explore innovative science projects AND experiments.', '2022-12-08 16:00:00', 'Fair', 'Science'),
+(81, 'Fashion Workshop', '2022-08-31 14:00:00', 'Learn fashion design AND clothing construction techniques.', '2022-08-31 18:00:00', 'Workshop', 'Fashion'),
+(82, 'Live Music Night', '2022-09-18 20:00:00', 'Enjoy live music performances FROM LOCAL bands.', '2022-09-18 23:00:00', 'Music Night', 'Music'),
+(83, 'Mindfulness Retreat', '2022-10-06 10:00:00', 'Experience mindfulness AND meditation practices IN a serene setting.', '2022-10-08 17:00:00', 'Retreat', 'Wellness'),
+(84, 'Book Signing', '2022-11-20 15:00:00', 'Meet your favorite authors AND GET SIGNED copies of books.', '2022-11-20 17:00:00', 'Literature', 'Books'),
+(85, 'Holiday Market', '2022-12-10 11:00:00', 'Shop FOR UNIQUE gifts AND crafts FOR the holiday season.', '2022-12-10 18:00:00', 'Market', 'Seasonal'),
+(86, 'Dance Showcase', '2022-08-24 17:30:00', 'Experience stunning dance performances BY talented artists.', '2022-08-24 21:00:00', 'Showcase', 'Dance'),
+(87, 'Video Game Expo', '2022-09-14 10:00:00', 'Explore the world of video games, FROM retro TO modern.', '2022-09-14 18:00:00', 'Expo', 'Gaming'),
+(88, 'Environmental Talk', '2022-10-28 18:00:00', 'Learn about environmental conservation AND sustainability.', '2022-10-28 20:00:00', 'Lecture', 'Environment'),
+(89, 'Magic Workshop', '2022-11-16 13:00:00', 'Learn magic tricks AND illusions FROM professional magicians.', '2022-11-16 17:00:00', 'Workshop', 'Magic'),
+(90, 'Nature Photography', '2022-12-12 08:00:00', 'Capture the beauty of nature through photography.', '2022-12-12 14:00:00', 'Photography', 'Nature'),
+(91, 'Zumba Party', '2022-08-27 11:00:00', 'Dance AND exercise TO high-energy Zumba music.', '2022-08-27 14:00:00', 'Party', 'Fitness'),
+(92, 'Outdoor Movie Night', '2022-09-20 18:30:00', 'Watch a movie under the stars WITH friends AND family.', '2022-09-20 21:30:00', 'Movie Night', 'Entertainment'),
+(93, 'Culinary Class', '2022-10-10 12:00:00', 'MASTER the art of cooking WITH professional chefs.', '2022-10-10 15:00:00', 'Class', 'Culinary'),
+(94, 'Art Fair', '2022-11-22 10:00:00', 'Explore AND purchase UNIQUE artworks FROM LOCAL artists.', '2022-11-22 17:00:00', 'Fair', 'Art'),
+(95, 'NEW YEAR\'s Eve Party', '2022-12-31 20:00:00', 'Ring IN the NEW YEAR WITH a glamorous celebration.', '2024-01-01 01:00:00', 'Party', 'Celebration'),
+(96, 'Art Workshop', '2023-08-15 10:00:00', 'Join us for a creative art workshop and learn various techniques.', '2023-08-15 13:00:00', 'Workshop', 'Art'),
+(97, 'Technology Conference', '2023-09-05 09:00:00', 'Explore the latest trends and innovations in the technology industry.', '2023-09-06 17:00:00', 'Conference', 'Technology'),
+(98, 'Cooking Competition', '2023-10-20 14:00:00', 'Show off your culinary skills and compete for the title of the best chef.', '2023-10-20 18:00:00', 'Competition', 'Culinary'),
+(99, 'Outdoor Music Festival', '2023-11-08 12:00:00', 'Enjoy live music performances by renowned artists in an open-air setting.', '2023-11-10 23:00:00', 'Festival', 'Music'),
+(100, 'Fitness Expo', '2023-12-03 09:00:00', 'Explore the latest fitness trends and products to help you stay healthy.', '2023-12-03 17:00:00', 'Expo', 'Health & Wellness');
+
+
+
+
+--
+-- Table structure for table `events_has_clients`
+--
+CREATE TABLE `events_has_clients` (
+  `event_ID` int(11) NOT NULL,
+  `client_ID` int(11) NOT NULL,
+  `payment_to_client` decimal(10,2) DEFAULT NULL,
+  `payment_to_ticketmaster` decimal(10,2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Dumping data for table `events_has_clients`
+--
+INSERT INTO `events_has_clients` (`event_ID`, `client_ID`, `payment_to_client`, `payment_to_ticketmaster`) VALUES
+(1, 6, '100.00', '50.00'),
+(1, 12, '150.00', '75.00'),
+(2, 2, '75.00', '40.00'),
+(2, 8, '120.00', '60.00'),
+(3, 9, '80.00', '40.00'),
+(3, 13, '100.00', '50.00'),
+(4, 10, '90.00', '45.00'),
+(4, 15, '110.00', '55.00'),
+(5, 1, '120.00', '60.00'),
+(5, 14, '130.00', '65.00'),
+(6, 5, '70.00', '35.00'),
+(6, 11, '85.00', '43.00'),
+(7, 4, '95.00', '48.00'),
+(7, 7, '105.00', '53.00'),
+(8, 2, '60.00', '30.00'),
+(8, 10, '100.00', '50.00'),
+(9, 3, '125.00', '63.00'),
+(9, 9, '115.00', '58.00'),
+(10, 6, '110.00', '55.00'),
+(10, 13, '135.00', '68.00'),
+(11, 1, '130.00', '65.00'),
+(11, 15, '150.00', '75.00'),
+(12, 5, '70.00', '35.00'),
+(12, 11, '85.00', '43.00'),
+(13, 4, '95.00', '48.00'),
+(13, 12, '120.00', '60.00'),
+(14, 2, '75.00', '40.00'),
+(14, 8, '100.00', '50.00'),
+(15, 3, '80.00', '40.00'),
+(15, 10, '110.00', '55.00'),
+(16, 6, '90.00', '45.00'),
+(16, 14, '105.00', '53.00'),
+(17, 1, '100.00', '50.00'),
+(17, 7, '130.00', '65.00'),
+(18, 5, '70.00', '35.00'),
+(18, 13, '125.00', '63.00'),
+(19, 4, '115.00', '58.00'),
+(19, 12, '135.00', '68.00'),
+(20, 2, '150.00', '75.00'),
+(20, 9, '70.00', '35.00'),
+(21, 6, '85.00', '43.00'),
+(21, 15, '95.00', '48.00'),
+(22, 1, '105.00', '53.00'),
+(22, 11, '60.00', '30.00'),
+(23, 3, '100.00', '50.00'),
+(23, 7, '120.00', '60.00'),
+(24, 4, '80.00', '40.00'),
+(24, 10, '110.00', '55.00'),
+(25, 2, '90.00', '45.00'),
+(25, 8, '125.00', '63.00'),
+(26, 9, '115.00', '58.00'),
+(26, 13, '135.00', '68.00'),
+(27, 10, '150.00', '75.00'),
+(27, 15, '70.00', '35.00'),
+(28, 1, '85.00', '43.00'),
+(28, 14, '95.00', '48.00'),
+(29, 5, '105.00', '53.00'),
+(29, 11, '60.00', '30.00'),
+(30, 4, '100.00', '50.00'),
+(30, 7, '120.00', '60.00'),
+(31, 2, '80.00', '40.00'),
+(31, 10, '110.00', '55.00'),
+(32, 3, '90.00', '45.00'),
+(32, 9, '125.00', '63.00'),
+(33, 6, '115.00', '58.00'),
+(33, 13, '135.00', '68.00'),
+(34, 1, '150.00', '75.00'),
+(34, 15, '70.00', '35.00'),
+(35, 5, '85.00', '43.00'),
+(35, 11, '95.00', '48.00'),
+(36, 4, '105.00', '53.00'),
+(36, 12, '60.00', '30.00'),
+(37, 2, '100.00', '50.00'),
+(37, 8, '120.00', '60.00'),
+(38, 3, '80.00', '40.00'),
+(38, 10, '110.00', '55.00'),
+(39, 6, '90.00', '45.00'),
+(39, 14, '125.00', '63.00'),
+(40, 1, '115.00', '58.00'),
+(40, 7, '135.00', '68.00'),
+(41, 5, '150.00', '75.00'),
+(41, 13, '70.00', '35.00'),
+(42, 4, '85.00', '43.00'),
+(42, 12, '95.00', '48.00'),
+(43, 2, '105.00', '53.00'),
+(43, 9, '60.00', '30.00'),
+(44, 6, '100.00', '50.00'),
+(44, 15, '120.00', '60.00'),
+(45, 1, '80.00', '40.00'),
+(45, 11, '110.00', '55.00'),
+(46, 3, '90.00', '45.00'),
+(46, 7, '125.00', '63.00'),
+(47, 5, '115.00', '58.00'),
+(47, 10, '135.00', '68.00'),
+(48, 4, '150.00', '75.00'),
+(48, 8, '70.00', '35.00'),
+(49, 2, '85.00', '43.00'),
+(49, 13, '95.00', '48.00'),
+(50, 6, '105.00', '53.00'),
+(50, 14, '60.00', '30.00'),
+(51, 1, '100.00', '50.00'),
+(51, 12, '120.00', '60.00');
+
+
+
+
+--
+-- Table structure for table `events_has_venues`
+--
+CREATE TABLE `events_has_venues` (
+  `event_ID` int(11) NOT NULL,
+  `venue_ID` int(11) NOT NULL,
+  `start_date` datetime DEFAULT NULL,
+  `end_date` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Dumping data for table `events_has_venues`
+--
+INSERT INTO `events_has_venues` (`event_ID`, `venue_ID`, `start_date`, `end_date`) VALUES
+(1, 1, '2023-08-01 10:00:00', '2023-08-01 18:00:00'),
+(1, 15, '2023-08-01 10:00:00', '2023-08-01 18:00:00'),
+(2, 2, '2023-08-02 14:30:00', '2023-08-02 22:00:00'),
+(3, 3, '2023-08-03 09:15:00', '2023-08-03 17:30:00'),
+(4, 4, '2023-08-04 16:45:00', '2023-08-04 23:00:00'),
+(4, 19, '2023-08-04 16:45:00', '2023-08-04 23:00:00'),
+(5, 5, '2023-08-05 11:30:00', '2023-08-05 19:30:00'),
+(6, 6, '2023-08-06 13:00:00', '2023-08-06 21:00:00'),
+(6, 21, '2023-08-06 13:00:00', '2023-08-06 21:00:00'),
+(7, 7, '2023-08-07 15:45:00', '2023-08-07 23:45:00'),
+(8, 8, '2023-08-08 08:30:00', '2023-08-08 16:30:00'),
+(8, 23, '2023-08-08 08:30:00', '2023-08-08 16:30:00'),
+(9, 9, '2023-08-09 12:15:00', '2023-08-09 20:15:00'),
+(10, 10, '2023-08-10 17:00:00', '2023-08-10 01:00:00'),
+(10, 25, '2023-08-10 17:00:00', '2023-08-10 01:00:00'),
+(11, 11, '2023-08-11 10:30:00', '2023-08-11 18:30:00'),
+(12, 12, '2023-08-12 14:45:00', '2023-08-12 22:45:00'),
+(13, 13, '2023-08-13 09:30:00', '2023-08-13 17:30:00'),
+(14, 14, '2023-08-14 16:15:00', '2023-08-14 23:45:00'),
+(15, 15, '2023-08-15 11:45:00', '2023-08-15 19:45:00'),
+(15, 30, '2023-08-15 11:45:00', '2023-08-15 19:45:00'),
+(16, 16, '2023-08-16 13:30:00', '2023-08-16 21:30:00'),
+(17, 17, '2023-08-17 15:00:00', '2023-08-17 23:00:00'),
+(17, 32, '2023-08-17 15:00:00', '2023-08-17 23:00:00'),
+(18, 18, '2023-08-18 08:45:00', '2023-08-18 16:45:00'),
+(19, 19, '2023-08-19 12:30:00', '2023-08-19 20:30:00'),
+(20, 20, '2023-08-20 17:15:00', '2023-08-20 01:15:00'),
+(20, 35, '2023-08-20 17:15:00', '2023-08-20 01:15:00'),
+(21, 1, '2023-09-21 10:00:00', '2023-09-21 18:00:00'),
+(21, 41, '2023-09-21 10:00:00', '2023-09-21 18:00:00'),
+(22, 42, '2023-09-22 14:30:00', '2023-09-22 22:30:00'),
+(23, 43, '2023-09-23 09:15:00', '2023-09-23 17:15:00'),
+(24, 4, '2023-09-24 16:45:00', '2023-09-24 23:00:00'),
+(24, 44, '2023-09-24 16:45:00', '2023-09-24 23:00:00'),
+(25, 45, '2023-09-25 11:30:00', '2023-09-25 19:30:00'),
+(26, 9, '2023-09-26 13:00:00', '2023-09-26 21:00:00'),
+(26, 46, '2023-09-26 13:00:00', '2023-09-26 21:00:00'),
+(27, 47, '2023-09-27 15:45:00', '2023-09-27 23:45:00'),
+(28, 12, '2023-09-28 08:30:00', '2023-09-28 16:30:00'),
+(28, 48, '2023-09-28 08:30:00', '2023-09-28 16:30:00'),
+(29, 49, '2023-09-29 12:15:00', '2023-09-29 20:15:00'),
+(30, 15, '2023-09-30 17:00:00', '2023-09-30 01:00:00'),
+(30, 50, '2023-09-30 17:00:00', '2023-09-30 01:00:00'),
+(31, 1, '2023-10-01 10:30:00', '2023-10-01 18:30:00'),
+(32, 2, '2023-10-02 14:45:00', '2023-10-02 22:45:00'),
+(33, 3, '2023-10-03 09:30:00', '2023-10-03 17:30:00'),
+(33, 18, '2023-10-03 09:30:00', '2023-10-03 17:30:00'),
+(34, 4, '2023-10-04 16:15:00', '2023-10-04 23:45:00'),
+(35, 5, '2023-10-05 11:45:00', '2023-10-05 19:45:00'),
+(36, 6, '2023-10-06 13:30:00', '2023-10-06 21:30:00'),
+(36, 21, '2023-10-06 13:30:00', '2023-10-06 21:30:00'),
+(37, 7, '2023-10-07 15:00:00', '2023-10-07 23:00:00'),
+(38, 8, '2023-10-08 08:45:00', '2023-10-08 16:45:00'),
+(38, 23, '2023-10-08 08:45:00', '2023-10-08 16:45:00'),
+(39, 9, '2023-10-09 12:30:00', '2023-10-09 20:30:00'),
+(40, 10, '2023-10-10 17:15:00', '2023-10-10 01:15:00'),
+(40, 25, '2023-10-10 17:15:00', '2023-10-10 01:15:00');
+
+
+
+
+--
+-- Table structure for table `orders`
+--
+CREATE TABLE `orders` (
+  `order_ID` int(11) NOT NULL,
+  `order_date` datetime DEFAULT NULL,
+  `total_amount` decimal(10,0) DEFAULT NULL,
+  `payment_status` varchar(45) DEFAULT NULL,
+  `customer_ID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Dumping data for table `orders`
+--
+INSERT INTO `orders` (`order_ID`, `order_date`, `total_amount`, `payment_status`, `customer_ID`) VALUES
+(1, '2022-01-15 10:30:00', '150', 'Paid', 1),
+(2, '2023-08-02 14:30:00', '1200', 'Paid', 52),
+(3, '2023-08-03 09:15:00', '800', 'Pending', 53),
+(4, '2023-08-04 16:45:00', '600', 'Paid', 54),
+(5, '2022-05-25 12:00:00', '300', 'Paid', 5),
+(6, '2023-08-06 13:00:00', '700', 'Paid', 56),
+(7, '2023-08-07 15:45:00', '900', 'Paid', 57),
+(8, '2023-08-08 08:30:00', '400', 'Pending', 58),
+(9, '2023-08-09 12:15:00', '1500', 'Paid', 59),
+(10, '2022-10-12 13:00:00', '150', 'Paid', 10),
+(11, '2023-08-11 10:30:00', '800', 'Paid', 61),
+(12, '2023-08-12 14:45:00', '1200', 'Paid', 62),
+(13, '2023-08-13 09:30:00', '700', 'Pending', 63),
+(14, '2023-08-14 16:15:00', '900', 'Paid', 64),
+(15, '2022-03-11 10:15:00', '70', 'Pending', 2),
+(16, '2023-08-16 13:30:00', '800', 'Paid', 66),
+(17, '2023-08-17 15:00:00', '1200', 'Paid', 67),
+(18, '2023-08-18 08:45:00', '900', 'Pending', 68),
+(19, '2023-08-19 12:30:00', '1500', 'Paid', 69),
+(20, '2022-08-09 17:20:00', '150', 'Paid', 20),
+(21, '2023-08-21 10:00:00', '800', 'Paid', 71),
+(22, '2023-08-22 14:30:00', '1200', 'Paid', 72),
+(23, '2023-08-23 09:15:00', '700', 'Pending', 73),
+(24, '2023-08-24 16:45:00', '900', 'Paid', 74),
+(25, '2022-01-09 11:50:00', '120', 'Paid', 25),
+(26, '2023-08-26 13:00:00', '800', 'Paid', 76),
+(27, '2023-08-27 15:45:00', '1200', 'Paid', 77),
+(28, '2023-08-28 08:30:00', '900', 'Pending', 78),
+(29, '2023-08-29 12:15:00', '1500', 'Paid', 79),
+(30, '2022-06-27 14:50:00', '50', 'Pending', 30),
+(31, '2023-09-01 10:30:00', '800', 'Paid', 81),
+(32, '2023-09-02 14:45:00', '1200', 'Paid', 82),
+(33, '2023-09-03 09:30:00', '700', 'Pending', 83),
+(34, '2023-09-04 16:15:00', '900', 'Paid', 84),
+(35, '2022-11-19 18:10:00', '280', 'Paid', 35),
+(36, '2023-09-06 13:30:00', '800', 'Paid', 86),
+(37, '2023-09-07 15:00:00', '1200', 'Paid', 87),
+(38, '2023-09-08 08:45:00', '900', 'Pending', 88),
+(39, '2023-09-09 12:30:00', '1500', 'Paid', 89),
+(40, '2022-04-07 09:50:00', '130', 'Paid', 40),
+(41, '2023-09-11 10:00:00', '800', 'Paid', 91),
+(42, '2023-09-12 14:30:00', '1200', 'Paid', 92),
+(43, '2023-09-13 09:15:00', '700', 'Pending', 93),
+(44, '2023-09-14 16:45:00', '900', 'Paid', 94),
+(45, '2022-09-24 10:00:00', '90', 'Pending', 45),
+(46, '2023-09-16 13:00:00', '800', 'Paid', 96),
+(47, '2023-09-17 15:45:00', '1200', 'Paid', 97),
+(48, '2023-09-18 08:30:00', '900', 'Pending', 98),
+(49, '2023-09-19 12:15:00', '1500', 'Paid', 99),
+(50, '2022-02-15 19:15:00', '250', 'Paid', 50),
+(51, '2022-03-05 10:30:00', '150', 'Paid', 1),
+(52, '2022-04-20 14:45:00', '250', 'Paid', 2),
+(53, '2022-05-15 09:00:00', '80', 'Pending', 2),
+(54, '2022-06-10 18:20:00', '120', 'Paid', 4),
+(55, '2022-07-25 12:00:00', '300', 'Paid', 5),
+(56, '2022-08-18 15:30:00', '50', 'Pending', 6),
+(57, '2022-09-08 08:15:00', '180', 'Paid', 7),
+(58, '2022-10-22 16:45:00', '90', 'Paid', 8),
+(59, '2022-11-03 11:10:00', '200', 'Pending', 9),
+(60, '2022-12-12 13:00:00', '150', 'Paid', 10),
+(61, '2023-01-28 17:30:00', '280', 'Paid', 11),
+(62, '2023-02-07 09:45:00', '75', 'Pending', 2),
+(63, '2023-03-02 14:20:00', '110', 'Paid', 13),
+(64, '2023-04-18 19:00:00', '220', 'Paid', 14),
+(65, '2023-05-11 10:15:00', '70', 'Pending', 15),
+(66, '2023-06-29 08:30:00', '130', 'Paid', 16),
+(67, '2023-07-14 16:00:00', '260', 'Paid', 17),
+(68, '2023-08-30 11:45:00', '100', 'Pending', 18),
+(69, '2023-09-22 13:30:00', '180', 'Paid', 19),
+(70, '2023-10-09 17:20:00', '150', 'Paid', 20),
+(71, '2023-11-28 09:10:00', '90', 'Pending', 21),
+(72, '2023-12-16 14:00:00', '200', 'Paid', 22),
+(73, '2024-01-03 18:45:00', '140', 'Paid', 23),
+(74, '2024-02-19 10:30:00', '75', 'Pending', 24),
+(75, '2024-03-09 11:50:00', '120', 'Paid', 25),
+(76, '2024-04-28 15:15:00', '250', 'Paid', 26),
+(77, '2024-05-23 08:40:00', '80', 'Pending', 27),
+(78, '2024-06-14 17:25:00', '180', 'Paid', 28),
+(79, '2024-07-05 12:10:00', '300', 'Paid', 29),
+(80, '2024-08-27 14:50:00', '50', 'Pending', 30),
+(81, '2024-09-17 07:30:00', '120', 'Paid', 31),
+(82, '2024-10-08 16:20:00', '90', 'Paid', 32),
+(83, '2024-11-01 09:15:00', '200', 'Pending', 33),
+(84, '2024-12-25 13:40:00', '150', 'Paid', 34),
+(85, '2025-01-19 18:10:00', '280', 'Paid', 35),
+(86, '2025-02-12 10:05:00', '75', 'Pending', 36),
+(87, '2025-03-04 15:30:00', '110', 'Paid', 37),
+(88, '2025-04-26 19:45:00', '220', 'Paid', 38),
+(89, '2025-05-17 11:20:00', '70', 'Pending', 39),
+(90, '2025-06-08 08:50:00', '130', 'Paid', 40),
+(91, '2025-07-29 16:15:00', '260', 'Paid', 41),
+(92, '2025-08-22 09:40:00', '100', 'Pending', 42),
+(93, '2025-09-13 12:25:00', '180', 'Paid', 43),
+(94, '2025-10-05 15:45:00', '150', 'Paid', 44),
+(95, '2025-11-26 08:30:00', '90', 'Pending', 45),
+(96, '2025-12-18 17:00:00', '200', 'Paid', 46),
+(97, '2026-01-10 13:20:00', '140', 'Paid', 47),
+(98, '2026-02-01 10:10:00', '75', 'Pending', 48),
+(99, '2026-03-24 14:55:00', '120', 'Paid', 49),
+(100, '2026-04-15 19:15:00', '250', 'Paid', 50);
+
+
+
+
+--
+-- Table structure for table `reviews`
+--
+CREATE TABLE `reviews` (
+  `review_ID` int(11) NOT NULL,
+  `rating` int(11) DEFAULT NULL,
+  `comments` varchar(45) DEFAULT NULL,
+  `customer_ID` int(11) NOT NULL,
+  `event_ID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Dumping data for table `reviews`
+--
+INSERT INTO `reviews` (`review_ID`, `rating`, `comments`, `customer_ID`, `event_ID`) VALUES
+(1, 4, 'Great event!', 25, 38),
+(2, 5, 'Absolutely amazing!', 16, 3),
+(3, 3, 'Average experience.', 5, 5),
+(4, 4, 'Enjoyed it a lot.', 18, 5),
+(5, 2, 'Not worth it.', 10, 20),
+(6, 5, 'Best event ever!', 1, 50),
+(7, 4, 'Had a good time.', 14, 33),
+(8, 4, 'Impressive show.', 19, 2),
+(9, 3, 'Expected more.', 22, 11),
+(10, 5, 'Superb performance!', 11, 31),
+(11, 4, 'Well-organized event.', 8, 47),
+(12, 5, 'Absolutely fantastic!', 23, 13),
+(13, 2, 'Disappointing.', 5, 5),
+(14, 4, 'Good value for money.', 2, 30),
+(15, 3, 'Not my favorite.', 12, 23),
+(16, 4, 'Highly recommended!', 3, 36),
+(17, 5, 'Unforgettable experience!', 9, 7),
+(18, 3, 'Decent show.', 21, 19),
+(19, 4, 'Loved every moment.', 4, 25),
+(20, 5, 'Perfect in every way!', 5, 8),
+(21, 4, 'Enjoyable event.', 15, 46),
+(22, 5, 'Absolutely stunning!', 17, 18),
+(23, 3, 'Could have been better.', 13, 1),
+(24, 4, 'Well worth attending.', 20, 12),
+(25, 2, 'Disappointed.', 24, 28),
+(26, 5, 'Incredible performance!', 26, 15),
+(27, 4, 'Had a blast!', 29, 16),
+(28, 4, 'Very entertaining.', 30, 44),
+(29, 3, 'Not as expected.', 27, 14),
+(30, 5, 'Absolutely phenomenal!', 31, 42),
+(31, 4, 'Good event overall.', 28, 17),
+(32, 5, 'Spectacular!', 32, 22),
+(33, 3, 'Average show.', 10, 10),
+(34, 4, 'Thoroughly enjoyed it.', 34, 4),
+(35, 2, 'Not impressed.', 35, 21),
+(36, 5, 'Brilliant performance!', 36, 48),
+(37, 4, 'Had an amazing time.', 37, 32),
+(38, 4, 'Impressive.', 38, 27),
+(39, 3, 'Expected more.', 39, 35),
+(40, 5, 'Outstanding!', 40, 40),
+(41, 4, 'Well-organized and fun.', 41, 9),
+(42, 5, 'Absolutely incredible!', 42, 34),
+(43, 2, 'Disappointing experience.', 10, 10),
+(44, 4, 'Worth the visit.', 44, 45),
+(45, 3, 'Not my type of event.', 45, 49),
+(46, 4, 'Impressed with the show.', 46, 43),
+(47, 5, 'Unbelievably good!', 47, 6),
+(48, 3, 'Average performance.', 48, 26),
+(49, 4, 'Really enjoyed it.', 49, 39),
+(50, 5, 'Memorable experience!', 50, 41),
+(51, 4, 'Great event!', 85, 73),
+(52, 5, 'Absolutely amazing!', 16, 94),
+(53, 3, 'Average experience.', 46, 19),
+(54, 4, 'Enjoyed it a lot.', 38, 88),
+(55, 2, 'Not worth it.', 79, 41),
+(56, 5, 'Best event ever!', 30, 52),
+(57, 4, 'Had a good time.', 1, 6),
+(58, 4, 'Impressive show.', 97, 42),
+(59, 3, 'Expected more.', 65, 12),
+(60, 5, 'Superb performance!', 22, 84),
+(61, 4, 'Well-organized event.', 70, 36),
+(62, 5, 'Absolutely fantastic!', 75, 91),
+(63, 2, 'Disappointing.', 43, 64),
+(64, 4, 'Good value for money.', 14, 74),
+(65, 3, 'Not my favorite.', 4, 87),
+(66, 4, 'Highly recommended!', 67, 63),
+(67, 5, 'Unforgettable experience!', 77, 21),
+(68, 3, 'Decent show.', 50, 49),
+(69, 4, 'Loved every moment.', 8, 10),
+(70, 5, 'Perfect in every way!', 32, 66),
+(71, 4, 'Enjoyable event.', 84, 95),
+(72, 5, 'Absolutely stunning!', 20, 98),
+(73, 3, 'Could have been better.', 7, 15),
+(74, 4, 'Well worth attending.', 2, 28),
+(75, 2, 'Disappointed.', 76, 80),
+(76, 5, 'Incredible performance!', 99, 24),
+(77, 4, 'Had a blast!', 3, 57),
+(78, 4, 'Very entertaining.', 61, 47),
+(79, 3, 'Not as expected.', 45, 23),
+(80, 5, 'Absolutely phenomenal!', 87, 25),
+(81, 4, 'Good event overall.', 69, 26),
+(82, 5, 'Spectacular!', 58, 100),
+(83, 3, 'Average show.', 17, 33),
+(84, 4, 'Thoroughly enjoyed it.', 66, 45),
+(85, 2, 'Not impressed.', 59, 2),
+(86, 5, 'Brilliant performance!', 51, 55),
+(87, 4, 'Had an amazing time.', 13, 83),
+(88, 4, 'Impressive.', 89, 1),
+(89, 3, 'Expected more.', 56, 89),
+(90, 5, 'Outstanding!', 36, 7),
+(91, 4, 'Well-organized and fun.', 49, 86),
+(92, 5, 'Absolutely incredible!', 29, 11),
+(93, 2, 'Disappointing experience.', 64, 14),
+(94, 4, 'Worth the visit.', 96, 75),
+(95, 3, 'Not my type of event.', 11, 96),
+(96, 4, 'Impressed with the show.', 37, 71),
+(97, 5, 'Unbelievably good!', 90, 5),
+(98, 3, 'Average performance.', 21, 29),
+(99, 4, 'Really enjoyed it.', 24, 68),
+(100, 5, 'Memorable experience!', 63, 56);
+
+
+
+
+--
+-- Table structure for table `seats`
+--
+CREATE TABLE `seats` (
+  `seat_ID` int(11) NOT NULL,
+  `section_number` varchar(45) DEFAULT NULL,
+  `venue_ID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Dumping data for table `seats`
+--
+INSERT INTO `seats` (`seat_ID`, `section_number`, `venue_ID`) VALUES
+(1, 'A', 1),
+(2, 'B', 1),
+(3, 'C', 1),
+(4, 'D', 2),
+(5, 'E', 2),
+(6, 'F', 2),
+(7, 'A', 3),
+(8, 'B', 3),
+(9, 'C', 3),
+(10, 'A', 4),
+(11, 'B', 4),
+(12, 'C', 4),
+(13, 'A', 5),
+(14, 'B', 5),
+(15, 'C', 5),
+(16, 'A', 6),
+(17, 'B', 6),
+(18, 'C', 6),
+(19, 'A', 7),
+(20, 'B', 7),
+(21, 'C', 7),
+(22, 'A', 8),
+(23, 'B', 8),
+(24, 'C', 8),
+(25, 'A', 9),
+(26, 'B', 9),
+(27, 'C', 9),
+(28, 'A', 10),
+(29, 'B', 10),
+(30, 'C', 10),
+(31, 'A', 11),
+(32, 'B', 11),
+(33, 'C', 11),
+(34, 'A', 12),
+(35, 'B', 12),
+(36, 'C', 12),
+(37, 'A', 13),
+(38, 'B', 13),
+(39, 'C', 13),
+(40, 'A', 14),
+(41, 'B', 14),
+(42, 'C', 14),
+(43, 'A', 15),
+(44, 'B', 15),
+(45, 'C', 15),
+(46, 'A', 16),
+(47, 'B', 16),
+(48, 'C', 16),
+(49, 'A', 17),
+(50, 'B', 17),
+(51, 'C', 18),
+(52, 'A', 18),
+(53, 'B', 18),
+(54, 'A', 19),
+(55, 'B', 19),
+(56, 'C', 19),
+(57, 'A', 20),
+(58, 'B', 20),
+(59, 'C', 20),
+(60, 'A', 21),
+(61, 'B', 21),
+(62, 'C', 21),
+(63, 'A', 22),
+(64, 'B', 22),
+(65, 'C', 22),
+(66, 'A', 23),
+(67, 'B', 23),
+(68, 'C', 23),
+(69, 'A', 24),
+(70, 'B', 24),
+(71, 'C', 24),
+(72, 'A', 25),
+(73, 'B', 25),
+(74, 'C', 25),
+(75, 'A', 26),
+(76, 'B', 26),
+(77, 'C', 26),
+(78, 'A', 27),
+(79, 'B', 27),
+(80, 'C', 27),
+(81, 'A', 28),
+(82, 'B', 28),
+(83, 'C', 28),
+(84, 'A', 29),
+(85, 'B', 29),
+(86, 'C', 29),
+(87, 'A', 30),
+(88, 'B', 30),
+(89, 'C', 30),
+(90, 'A', 31),
+(91, 'B', 31),
+(92, 'C', 31),
+(93, 'A', 32),
+(94, 'B', 32),
+(95, 'C', 32),
+(96, 'A', 33),
+(97, 'B', 33),
+(98, 'C', 33),
+(99, 'A', 34),
+(100, 'B', 34);
+
+
+
+
+--
+-- Table structure for table `tickets`
+--
+CREATE TABLE `tickets` (
+  `ticket_ID` int(11) NOT NULL,
+  `ticket_price` decimal(10,0) NOT NULL,
+  `seat_ID` int(11) NOT NULL,
+  `order_ID` int(11) NOT NULL,
+  `event_ID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Dumping data for table `tickets`
+--
+INSERT INTO `tickets` (`ticket_ID`, `ticket_price`, `seat_ID`, `order_ID`, `event_ID`) VALUES
+(1, '50', 1, 1, 1),
+(2, '75', 2, 2, 1),
+(3, '60', 3, 3, 2),
+(4, '100', 4, 4, 3),
+(5, '45', 5, 5, 4),
+(6, '70', 6, 6, 5),
+(7, '55', 7, 7, 6),
+(8, '90', 8, 8, 7),
+(9, '65', 9, 9, 8),
+(10, '80', 10, 10, 9),
+(11, '55', 11, 11, 10),
+(12, '70', 12, 12, 11),
+(13, '45', 13, 13, 12),
+(14, '75', 14, 14, 13),
+(15, '60', 15, 15, 14),
+(16, '100', 16, 16, 15),
+(17, '50', 17, 17, 16),
+(18, '70', 18, 18, 17),
+(19, '60', 19, 19, 18),
+(20, '90', 20, 20, 19),
+(21, '55', 21, 21, 20),
+(22, '80', 22, 22, 21),
+(23, '70', 23, 23, 22),
+(24, '100', 24, 24, 23),
+(25, '45', 25, 25, 24),
+(26, '75', 26, 26, 25),
+(27, '50', 27, 27, 26),
+(28, '80', 28, 28, 27),
+(29, '65', 29, 29, 28),
+(30, '90', 30, 30, 29),
+(31, '60', 31, 31, 30),
+(32, '100', 32, 32, 31),
+(33, '55', 33, 33, 32),
+(34, '75', 34, 34, 33),
+(35, '45', 35, 35, 34),
+(36, '70', 36, 36, 35),
+(37, '50', 37, 37, 36),
+(38, '80', 38, 38, 37),
+(39, '65', 39, 39, 38),
+(40, '90', 40, 40, 39),
+(41, '55', 41, 41, 40),
+(42, '70', 42, 42, 41),
+(43, '60', 43, 43, 42),
+(44, '100', 44, 44, 43),
+(45, '75', 45, 45, 44),
+(46, '50', 46, 46, 45),
+(47, '80', 47, 47, 46),
+(48, '70', 48, 48, 47),
+(49, '100', 49, 49, 48),
+(50, '45', 50, 50, 49),
+(51, '55', 1, 51, 1),
+(52, '75', 2, 52, 2),
+(53, '60', 3, 53, 3),
+(54, '95', 4, 54, 4),
+(55, '45', 5, 55, 5),
+(56, '70', 6, 56, 6),
+(57, '55', 7, 57, 7),
+(58, '90', 8, 58, 8),
+(59, '65', 9, 59, 9),
+(60, '80', 10, 60, 10),
+(61, '55', 11, 61, 11),
+(62, '70', 12, 62, 12),
+(63, '45', 13, 63, 13),
+(64, '75', 14, 64, 14),
+(65, '60', 15, 65, 15),
+(66, '95', 16, 66, 16),
+(67, '55', 17, 67, 17),
+(68, '70', 18, 68, 18),
+(69, '60', 19, 69, 19),
+(70, '90', 20, 70, 20),
+(71, '55', 21, 71, 21),
+(72, '80', 22, 72, 22),
+(73, '70', 23, 73, 23),
+(74, '100', 24, 74, 24),
+(75, '45', 25, 75, 25),
+(76, '75', 26, 76, 26),
+(77, '55', 27, 77, 27),
+(78, '80', 28, 78, 28),
+(79, '65', 29, 79, 29),
+(80, '90', 30, 80, 30),
+(81, '60', 31, 81, 31),
+(82, '100', 32, 82, 32),
+(83, '55', 33, 83, 33),
+(84, '75', 34, 84, 34),
+(85, '45', 35, 85, 35),
+(86, '70', 36, 86, 36),
+(87, '55', 37, 87, 37),
+(88, '80', 38, 88, 38),
+(89, '65', 39, 89, 39),
+(90, '90', 40, 90, 40),
+(91, '55', 41, 91, 41),
+(92, '70', 42, 92, 42),
+(93, '60', 43, 93, 43),
+(94, '100', 44, 94, 44),
+(95, '75', 45, 95, 45),
+(96, '50', 46, 96, 46),
+(97, '80', 47, 97, 47),
+(98, '70', 48, 98, 48),
+(99, '100', 49, 99, 49),
+(100, '45', 50, 100, 50),
+(101, '50', 1, 6, 99),
+(102, '50', 2, 7, 99),
+(103, '30', 10, 8, 100);
+
+
+
+
+--
+-- Table structure for table `venues`
+--
+CREATE TABLE `venues` (
+  `venue_ID` int(11) NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `capacity` int(11) DEFAULT NULL,
+  `address_ID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Dumping data for table `venues`
+--
+INSERT INTO `venues` (`venue_ID`, `name`, `capacity`, `address_ID`) VALUES
+(1, 'Venue A', 500, 83),
+(2, 'Venue B', 1000, 35),
+(3, 'Venue C', 800, 96),
+(4, 'Venue D', 600, 2),
+(5, 'Venue E', 1200, 59),
+(6, 'Venue F', 700, 16),
+(7, 'Venue G', 900, 32),
+(8, 'Venue H', 400, 89),
+(9, 'Venue I', 1500, 80),
+(10, 'Venue J', 1000, 43),
+(11, 'Venue K', 800, 69),
+(12, 'Venue L', 1200, 49),
+(13, 'Venue M', 700, 8),
+(14, 'Venue N', 900, 64),
+(15, 'Venue O', 600, 44),
+(16, 'Venue P', 800, 18),
+(17, 'Venue Q', 1200, 30),
+(18, 'Venue R', 900, 97),
+(19, 'Venue S', 1500, 46),
+(20, 'Venue T', 1000, 93),
+(21, 'Venue U', 800, 11),
+(22, 'Venue V', 1200, 56),
+(23, 'Venue W', 700, 70),
+(24, 'Venue X', 900, 7),
+(25, 'Venue Y', 600, 57),
+(26, 'Venue Z', 800, 36),
+(27, 'Venue AA', 1200, 78),
+(28, 'Venue BB', 900, 68),
+(29, 'Venue CC', 1500, 41),
+(30, 'Venue DD', 1000, 100),
+(31, 'Venue EE', 800, 74),
+(32, 'Venue FF', 1200, 12),
+(33, 'Venue GG', 700, 14),
+(34, 'Venue HH', 900, 61),
+(35, 'Venue II', 600, 31),
+(36, 'Venue JJ', 800, 33),
+(37, 'Venue KK', 1200, 72),
+(38, 'Venue LL', 900, 13),
+(39, 'Venue MM', 1500, 40),
+(40, 'Venue NN', 1000, 47),
+(41, 'Venue OO', 800, 91),
+(42, 'Venue PP', 1200, 85),
+(43, 'Venue QQ', 700, 20),
+(44, 'Venue RR', 900, 63),
+(45, 'Venue SS', 600, 23),
+(46, 'Venue TT', 800, 9),
+(47, 'Venue UU', 1200, 58),
+(48, 'Venue VV', 900, 1),
+(49, 'Venue WW', 1500, 21),
+(50, 'Venue XX', 1000, 25),
+(51, 'Venue YY', 800, 88),
+(52, 'Venue ZZ', 1200, 26),
+(53, 'Venue AA1', 700, 42),
+(54, 'Venue BB1', 900, 77),
+(55, 'Venue CC1', 600, 54),
+(56, 'Venue DD1', 800, 67),
+(57, 'Venue EE1', 1200, 15),
+(58, 'Venue FF1', 900, 75),
+(59, 'Venue GG1', 1500, 94),
+(60, 'Venue HH1', 1000, 5),
+(61, 'Venue II1', 800, 84),
+(62, 'Venue JJ1', 1200, 81),
+(63, 'Venue KK1', 700, 27),
+(64, 'Venue LL1', 900, 22),
+(65, 'Venue MM1', 600, 92),
+(66, 'Venue NN1', 800, 38),
+(67, 'Venue OO1', 1200, 86),
+(68, 'Venue PP1', 900, 79),
+(69, 'Venue QQ1', 1500, 66),
+(70, 'Venue RR1', 1000, 3),
+(71, 'Venue SS1', 800, 60),
+(72, 'Venue TT1', 1200, 34),
+(73, 'Venue UU1', 700, 10),
+(74, 'Venue VV1', 900, 37),
+(75, 'Venue WW1', 600, 50),
+(76, 'Venue XX1', 800, 48),
+(77, 'Venue YY1', 1200, 73),
+(78, 'Venue ZZ1', 900, 55),
+(79, 'Venue AA2', 1500, 87),
+(80, 'Venue BB2', 1000, 24),
+(81, 'Venue CC2', 800, 76),
+(82, 'Venue DD2', 1200, 4),
+(83, 'Venue EE2', 700, 99),
+(84, 'Venue FF2', 900, 53),
+(85, 'Venue GG2', 600, 28),
+(86, 'Venue HH2', 800, 29),
+(87, 'Venue II2', 1200, 45),
+(88, 'Venue JJ2', 900, 17),
+(89, 'Venue KK2', 1500, 71),
+(90, 'Venue LL2', 1000, 95),
+(91, 'Venue MM2', 800, 62),
+(92, 'Venue NN2', 1200, 90),
+(93, 'Venue OO2', 700, 98),
+(94, 'Venue PP2', 900, 39),
+(95, 'Venue QQ2', 600, 51),
+(96, 'Venue RR2', 800, 65),
+(97, 'Venue SS2', 1200, 82),
+(98, 'Venue TT2', 900, 52),
+(99, 'Venue UU2', 1500, 7),
+(100, 'Venue VV2', 1000, 1);
+
+
+
+
+--
+-- Indexes for dumped tables
+--
+
+
+--
+-- Indexes for table `address`
+--
+ALTER TABLE `address`
+  ADD PRIMARY KEY (`address_ID`);
+
+
+--
+-- Indexes for table `clients`
+--
+ALTER TABLE `clients`
+  ADD PRIMARY KEY (`client_ID`);
+
+
+--
+-- Indexes for table `customers`
+--
+ALTER TABLE `customers`
+  ADD PRIMARY KEY (`customer_ID`),
+  ADD KEY `fk_customers_Address1_idx` (`address_ID`);
+
+
+--
+-- Indexes for table `events`
+--
+ALTER TABLE `events`
+  ADD PRIMARY KEY (`event_ID`);
+
+
+--
+-- Indexes for table `events_has_clients`
+--
+ALTER TABLE `events_has_clients`
+  ADD PRIMARY KEY (`event_ID`,`client_ID`),
+  ADD KEY `fk_events_has_clients_clients1_idx` (`client_ID`),
+  ADD KEY `fk_events_has_clients_events1_idx` (`event_ID`);
+
+
+--
+-- Indexes for table `events_has_venues`
+--
+ALTER TABLE `events_has_venues`
+  ADD PRIMARY KEY (`event_ID`,`venue_ID`),
+  ADD KEY `fk_events_has_Venue_Venue1_idx` (`venue_ID`),
+  ADD KEY `fk_events_has_Venue_events1_idx` (`event_ID`);
+
+
+--
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`order_ID`),
+  ADD KEY `fk_order_customers1_idx` (`customer_ID`);
+
+
+--
+-- Indexes for table `reviews`
+--
+ALTER TABLE `reviews`
+  ADD PRIMARY KEY (`review_ID`),
+  ADD KEY `fk_reviews_customers1_idx` (`customer_ID`),
+  ADD KEY `fk_reviews_events1_idx` (`event_ID`);
+
+
+--
+-- Indexes for table `seats`
+--
+ALTER TABLE `seats`
+  ADD PRIMARY KEY (`seat_ID`),
+  ADD KEY `fk_Seat_Venue1_idx` (`venue_ID`);
+
+
+--
+-- Indexes for table `tickets`
+--
+ALTER TABLE `tickets`
+  ADD PRIMARY KEY (`ticket_ID`),
+  ADD KEY `fk_ticket_Seat1_idx` (`seat_ID`),
+  ADD KEY `fk_ticket_order1_idx` (`order_ID`),
+  ADD KEY `fk_ticket_events1_idx` (`event_ID`);
+
+
+--
+-- Indexes for table `venues`
+--
+ALTER TABLE `venues`
+  ADD PRIMARY KEY (`venue_ID`),
+  ADD KEY `fk_Venue_Address1_idx` (`address_ID`);
+
+
+
+
+--
+-- Constraints for dumped tables
+--
+
+
+--
+-- Constraints for table `customers`
+--
+ALTER TABLE `customers`
+  ADD CONSTRAINT `fk_customers_Address1` FOREIGN KEY (`address_ID`) REFERENCES `address` (`address_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+
+--
+-- Constraints for table `events_has_clients`
+--
+ALTER TABLE `events_has_clients`
+  ADD CONSTRAINT `fk_events_has_clients_clients1` FOREIGN KEY (`client_ID`) REFERENCES `clients` (`client_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_events_has_clients_events1` FOREIGN KEY (`event_ID`) REFERENCES `events` (`event_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+
+--
+-- Constraints for table `events_has_venues`
+--
+ALTER TABLE `events_has_venues`
+  ADD CONSTRAINT `fk_events_has_Venue_Venue1` FOREIGN KEY (`venue_ID`) REFERENCES `venues` (`venue_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_events_has_Venue_events1` FOREIGN KEY (`event_ID`) REFERENCES `events` (`event_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+
+--
+-- Constraints for table `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `fk_order_customers1` FOREIGN KEY (`customer_ID`) REFERENCES `customers` (`customer_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+
+--
+-- Constraints for table `reviews`
+--
+ALTER TABLE `reviews`
+  ADD CONSTRAINT `fk_reviews_customers1` FOREIGN KEY (`customer_ID`) REFERENCES `customers` (`customer_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_reviews_events1` FOREIGN KEY (`event_ID`) REFERENCES `events` (`event_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+
+--
+-- Constraints for table `seats`
+--
+ALTER TABLE `seats`
+  ADD CONSTRAINT `fk_Seat_Venue1` FOREIGN KEY (`venue_ID`) REFERENCES `venues` (`venue_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+
+--
+-- Constraints for table `tickets`
+--
+ALTER TABLE `tickets`
+  ADD CONSTRAINT `fk_ticket_Seat1` FOREIGN KEY (`seat_ID`) REFERENCES `seats` (`seat_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_ticket_events1` FOREIGN KEY (`event_ID`) REFERENCES `events` (`event_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_ticket_order1` FOREIGN KEY (`order_ID`) REFERENCES `orders` (`order_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+
+--
+-- Constraints for table `venues`
+--
+ALTER TABLE `venues`
+  ADD CONSTRAINT `fk_Venue_Address1` FOREIGN KEY (`address_ID`) REFERENCES `address` (`address_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+COMMIT;
+
+
+
+
+
+
+
+
+
+
+
+SQL Quries & Descriptions:
+
+
+-- Query 1
+-- Find the number of orders which have "Pending" payment status.
+SELECT COUNT(order_ID)
+FROM orders
+WHERE payment_status = "Pending";
+
+
+-- Query 2
+-- Find all order information(ID, date, total amount, payment status, customer ID) by a customer named "Jane Smith"
+SELECT * FROM orders
+WHERE customer_ID IN(
+    SELECT customer_ID
+    FROM customers
+    WHERE name = "Jane Smith"
+);
+
+
+-- Query 3
+-- Determine the event categories along with the number of events in each category where there are more than 5 events in that category.
+SELECT event_category, COUNT(event_ID) AS Number
+FROM events
+GROUP BY event_category
+HAVING number > 5;
+
+
+-- Query 4
+-- Find the top 10 royal customers: Find names and emails of the top 10 customers who have made the highest total payments with their number of orders across all orders on our platform, helping to find loyal and active customers, and send promotional offers
+SELECT C.name, C.email, SUM(O.total_amount) AS total, COUNT(order_ID) AS num_orders
+FROM orders O, customers C
+WHERE payment_status = "Paid"
+AND O.customer_ID = C.customer_ID
+GROUP BY O.customer_ID
+ORDER BY total DESC, num_orders DESC
+LIMIT 10;
+
+
+-- Query 5
+-- Venue Booking Frequency by Month:
+-- This query calculates the number of venues booked for events in each month, helping to identify peak booking periods.
+SELECT
+    YEAR(ev.start_date) AS year,
+    MONTH(ev.start_date) AS month,
+    COUNT(DISTINCT ev.venue_ID) AS num_booked_venues
+FROM
+    events_has_venues ev
+GROUP BY
+    YEAR(ev.start_date), MONTH(ev.start_date)
+ORDER BY
+    year ASC, num_booked_venues DESC;
+
+
+-- Query 6
+-- Find all the events happening in the city: Harbor City. Display the event names and category
+SELECT E.event_name, E.event_category
+FROM events E, events_has_venues EV, venues V, address A
+WHERE E.event_ID = EV.event_ID AND
+EV.venue_ID = V.venue_ID AND
+V.address_ID = A.address_ID AND
+A.city = "Harbor City";
+
+
+-- Query 7
+-- This query retrieves information about the event with the highest number of tickets among events with the same genre as the 'Music Festival', and whose event start is in the future.
+SELECT E.event_name, E.event_start, E.event_category, COUNT(T.ticket_ID) AS num_of_tickets
+FROM events E
+JOIN tickets T ON E.event_ID = T.event_ID
+WHERE E.event_start > NOW()
+AND E.event_genre = (
+    SELECT event_genre
+    FROM events
+    WHERE event_name = 'Music Festival'
+)
+GROUP BY T.event_ID
+ORDER BY num_of_tickets DESC
+LIMIT 1;
+
+
+-- Query 8
+-- Calculate the average ticket price for events in each event genre, show the result in ascending order of price
+SELECT E.event_genre, AVG(T.ticket_price) AS avg_price
+FROM events E, tickets T
+WHERE E.event_ID = T.event_ID
+GROUP BY E.event_genre
+ORDER BY avg_price
+LIMIT 10;
+
+
+-- Query 9
+-- Top Performing Events by Revenue:
+-- This query retrieves the top events by revenue, along with their event names, total revenue, and event categories. It helps identify which events are generating the highest revenue.
+SELECT
+    e.event_name,
+    e.event_category,
+    SUM(t.ticket_price) AS total_revenue
+FROM
+    events e
+JOIN
+    tickets t ON e.event_ID = t.event_ID
+GROUP BY
+    e.event_ID
+ORDER BY
+    total_revenue DESC
+LIMIT 5;
+
+
+-- Query 10
+-- Revenue Distribution Between Clients and Ticketmaster:
+-- This query calculates the revenue distribution by percentage between clients and Ticketmaster for each event, considering the payments made to clients and Ticketmaster for each event.
+SELECT
+    e.event_name,
+    e.event_category,
+    SUM(ec.payment_to_client) AS revenue_to_clients,
+    SUM(ec.payment_to_ticketmaster) AS revenue_to_ticketmaster,
+    (SUM(ec.payment_to_client) / (SUM(ec.payment_to_client) + SUM(ec.payment_to_ticketmaster))) * 100 AS client_percentage,
+        (SUM(ec.payment_to_ticketmaster) / (SUM(ec.payment_to_client) + SUM(ec.payment_to_ticketmaster))) * 100 AS ticketmaster_percentage
+
+
+FROM
+    events e
+JOIN
+    events_has_clients ec ON e.event_ID = ec.event_ID
+GROUP BY
+    e.event_ID
+ORDER BY
+    client_percentage DESC;
+
+
+-- Query 11
+-- Venue Utilization Rate
+-- This query calculates the utilization rate of each venue by analyzing the number of events hosted compared to the venue's capacity. It helps assess the efficiency of venue usage.
+SELECT
+    v.name,
+    COUNT(ev.event_ID) AS num_events,
+    v.capacity,
+    (COUNT(ev.event_ID) / v.capacity) * 100 AS utilization_rate
+FROM
+    venues v
+LEFT JOIN
+    events_has_venues ev ON v.venue_ID = ev.venue_ID
+GROUP BY
+    v.venue_ID
+ORDER BY
+    utilization_rate DESC;
+
+
+-- Query 12
+-- Popular Event Categories and Ratings:
+-- This query retrieves the average ratings for different event categories, helping to identify which event categories are more popular and better received by customers.
+SELECT
+    e.event_category,
+    AVG(r.rating) AS average_rating,
+    COUNT(r.rating) AS rating_count
+FROM
+    events e
+LEFT JOIN
+    reviews r ON e.event_ID = r.event_ID
+GROUP BY
+    e.event_category
+ORDER BY
+    average_rating DESC;
+
+
+-- Query 13
+-- Events with High Revenue and Low Attendance:
+-- This query identifies events that have high revenue but relatively low attendance, which might indicate an opportunity to improve marketing efforts.
+SELECT
+    e.event_name,
+    SUM(t.ticket_price) AS total_revenue,
+    COUNT(t.ticket_ID) AS attendance
+FROM
+    events e
+JOIN
+    tickets t ON e.event_ID = t.event_ID
+GROUP BY
+    e.event_ID
+HAVING
+    total_revenue > 100 AND attendance < 50
+ORDER BY
+    total_revenue DESC;
+
+
+-- Query 14
+-- Customers with Reviews for Multiple Event Categories:
+-- This query identifies customers who have submitted reviews for events across multiple categories, indicating their diverse interests.
+SELECT
+    c.name,
+    COUNT(DISTINCT e.event_category) AS num_reviewed_categories
+FROM
+    customers c
+JOIN
+    reviews r ON c.customer_ID = r.customer_ID
+JOIN
+    events e ON r.event_ID = e.event_ID
+GROUP BY
+    c.customer_ID
+HAVING
+    num_reviewed_categories > 1
+ORDER BY
+    num_reviewed_categories DESC;
+
+
+-- Query 15
+-- Event Performance Comparison by Venue Capacity:
+-- This query compares the average revenue generated per seat for events held in venues with different capacities, helping to understand the revenue efficiency of venues.
+SELECT
+    v.venue_ID,
+    v.name AS venue_name,
+    v.capacity,
+    AVG(t.ticket_price / v.capacity) AS avg_revenue_per_seat
+FROM
+    venues v
+JOIN
+    seats s ON v.venue_ID = s.venue_ID
+JOIN
+    tickets t ON s.seat_ID = t.seat_ID
+GROUP BY
+    v.venue_ID, v.name, v.capacity
+ORDER BY
+    avg_revenue_per_seat DESC;
+
+
+-- Query 16
+-- Event Durations
+-- query to retrieve events and calculate their duration provides valuable business insights in the context of event management and scheduling optimisation.
+SELECT
+    event_name,
+    event_start,
+    event_end,
+    TIMESTAMPDIFF(MINUTE, event_start, event_end) AS event_duration_minutes
+FROM
+    events
+ORDER BY
+    event_duration_minutes ASC
+LIMIT 5;
+
+
+-- Query 17
+-- Ticket Price Distribution and Category Analysis:
+-- This query analyzes the distribution of ticket prices across event categories, providing insights into pricing strategies for different types of events.
+SELECT
+    e.event_category,
+    COUNT(t.ticket_ID) AS num_tickets_sold,
+    MIN(t.ticket_price) AS min_ticket_price,
+    MAX(t.ticket_price) AS max_ticket_price,
+    ROUND(AVG(t.ticket_price), 2) AS avg_ticket_price
+FROM
+    events e
+JOIN
+    tickets t ON e.event_ID = t.event_ID
+GROUP BY
+    e.event_category
+ORDER BY
+    num_tickets_sold DESC;
+
+
+-- Query 18
+-- Event Popularity by Location:
+-- This query finds the cities with the highest number of events.
+SELECT
+    a.city,
+    COUNT(e.event_ID) AS event_count
+FROM
+    address a
+JOIN
+    venues v ON a.address_ID = v.address_ID
+JOIN
+    events_has_venues ev ON v.venue_ID = ev.venue_ID
+JOIN
+    events e ON ev.event_ID = e.event_ID
+GROUP BY
+    a.city
+ORDER BY
+    event_count DESC;
+
+
+-- Query 19
+-- Clients with High Payment Discrepancy:
+-- This query identifies clients whose payments to Ticketmaster significantly differ from their payments to clients, suggesting potential discrepancies in financial agreements.
+SELECT
+    c.client_name,
+    ec.payment_to_client,
+    ec.payment_to_ticketmaster,
+    (ec.payment_to_client - ec.payment_to_ticketmaster) AS payment_discrepancy
+FROM
+    clients c
+JOIN
+    events_has_clients ec ON c.client_ID = ec.client_ID
+HAVING
+    payment_discrepancy > 1000
+ORDER BY
+    payment_discrepancy DESC;
+
+
+-- Query 20
+-- Events with High Review Variance:
+-- This query identifies events that have a high variance in their review ratings, indicating events that have mixed or polarized audience opinions.
+SELECT
+    e.event_name,
+    e.event_category,
+    STDDEV(r.rating) AS review_rating_variance
+FROM
+    events e
+JOIN
+    reviews r ON e.event_ID = r.event_ID
+GROUP BY
+    e.event_ID
+HAVING
+    review_rating_variance > 1
+ORDER BY
+    review_rating_variance DESC;

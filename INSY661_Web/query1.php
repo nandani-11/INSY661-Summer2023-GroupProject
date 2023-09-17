@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Group3"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>query1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- css google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<?php
+include 'connectDB.php';
+?>
+
+<header>
+    <!-- If need image here <img src="/A6/vaccine.jpg" alt="vaccine" id="image"> -->
+    <div id="page-title"> <a href="MainPage.html"> Ticketdabbler </a> </div>
+</header>
+
+<main>
+    <?php
+
+    $sql = "SELECT COUNT(order_ID) FROM orders WHERE payment_status = 'Pending';";
+    $result = mysqli_query($conn, $sql);
+    echo "<br><br>";
+    echo "<div class = 'title'> Description: Find the number of orders which have 'Pending' payment status. </div>";
+    echo "<br>";
+    echo "<div class = 'title'> SQL query: SELECT COUNT(order_ID) FROM orders WHERE payment_status = 'Pending'; </div>";
+    echo "<br>";
+
+   if (mysqli_num_rows($result) == 0) {
+        echo "<div class = 'title'> Not Found!<br>Please try again! </div>";
+    } else{
+        echo "<table><tr><th>Number of 'Pending' orders</th></tr>";
+        //output data of each row
+        while ($row = $result->fetch_assoc()){
+            echo "<tr><td>".$row["COUNT(order_ID)"]."</td></tr>";
+        }
+        echo "</table>";    
+    }
+    ?>  
+</main>
+
+</body>
+</html>
